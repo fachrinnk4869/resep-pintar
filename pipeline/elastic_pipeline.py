@@ -11,6 +11,8 @@ class ElasticPipeline:
         self.es = Elasticsearch(client_url, api_key=env.ES_LOCAL_API_KEY)
         self.index = index_name
         self.mode = mode.lower()
+        self.sparse_generator = GenerateSparseVectors(model_type="opensearch")
+        self.dense_generator = GenerateDenseVector()
 
     # --- Utility ---
     def check_index_existence(self) -> bool:
@@ -165,8 +167,7 @@ class ElasticPipeline:
 
         # === Dense Search ===
         if mode in ["dense", "hybrid"]:
-            dense_generator = GenerateDenseVector()
-            dense_vec = dense_generator.get_dense_embedding(query)
+            dense_vec = self.dense_generator.get_dense_embedding(query)
 
             if dense_vec:
                 dense_query = {
@@ -201,8 +202,7 @@ class ElasticPipeline:
 
         # === Sparse Search ===
         if mode in ["sparse", "hybrid"]:
-            sparse_generator = GenerateSparseVectors(model_type="opensearch")
-            sparse_vec = sparse_generator.get_sparse_vector(query)[0]
+            sparse_vec = self.sparse_generator.get_sparse_vector(query)[0]
 
             if sparse_vec and sparse_vec.get("indices") and sparse_vec.get("values"):
                 query_vector = {

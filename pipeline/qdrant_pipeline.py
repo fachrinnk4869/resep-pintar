@@ -10,6 +10,8 @@ class QdrantPipeline:
         self.client = QdrantClient(url=client_url)
         self.collection_name = collection_name
         self.mode = mode
+        self.sparse_generator = GenerateSparseVectors(model_type="opensearch")
+        self.dense_generator = GenerateDenseVector()
 
     def check_collection_existence(self) -> bool:
         return self.client.collection_exists(collection_name=self.collection_name)
@@ -249,8 +251,7 @@ class QdrantPipeline:
         dense_vectors, sparse_vectors = [], []
         dense_results, sparse_results = [], []
         if mode in ["dense", "hybrid"]:
-            dense_generator = GenerateDenseVector()
-            dense_vectors = dense_generator.get_dense_embedding(query)
+            dense_vectors = self.dense_generator.get_dense_embedding(query)
             if dense_vectors:
                 dense_result = self.client.query_points(
                     collection_name=self.collection_name,
@@ -275,8 +276,7 @@ class QdrantPipeline:
                     })
 
         if mode in ["sparse", "hybrid"]:
-            sparse_generator = GenerateSparseVectors(model_type="opensearch")
-            sparse_vectors = sparse_generator.get_sparse_vector(query)[0]
+            sparse_vectors = self.sparse_generator.get_sparse_vector(query)[0]
             if sparse_vectors and sparse_vectors.get("indices") and sparse_vectors.get("values"):
                 sparse_result = self.client.query_points(
                     collection_name=self.collection_name,
