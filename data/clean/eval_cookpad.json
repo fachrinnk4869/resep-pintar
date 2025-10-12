@@ -1,0 +1,2959 @@
+[
+    {   
+        "category": "ayam",
+        "title": "Egg Chicken Roll",
+        "query": [
+            "telur, tepung terigu, ayam fillet, bawang putih, kecap asin, minyak wijen",
+            "ayam fillet, telur, tepung terigu",
+            "ayam, telur, kecap asin, minyak wijen",
+            "ayam, tepung terigu, maizena, bawang putih",
+            "ayam fillet, saori, minyak wijen, kecap asin"
+            ],
+        "gold_doc_ids": [
+            "24955519"
+        ]
+    },
+    {
+        "category": "ayam",
+        "title": "Ayam Panggang Madu Ketumbar",
+        "query": [
+            "ayam, madu, ketumbar, kecap manis, saus tiram",
+            "ayam, madu, kecap manis, bawang putih, bawang merah",
+            "ayam panggang, madu, ketumbar, jahe, serai",
+            "ayam, madu, kecap asin, lada bubuk, daun salam",
+            "ayam, madu, minyak wijen, ketumbar bubuk, bawang putih"
+        ],
+        "gold_doc_ids": [
+            "24983411"
+        ]
+    },
+    {
+        "category": "ayam",
+        "title": "Ayam Asam Manis Pedas",
+        "query": [
+            "ayam, saus tomat, saus cabai, saus tiram, kecap manis, bawang bombai",
+            "ayam, asam manis, nanas, cabai merah, bawang putih",
+            "ayam, saus tiram, bawang bombai, kecap manis, cabai hijau",
+            "ayam, jeruk nipis, saus tomat, saus cabai, nanas",
+            "ayam, saus tiram, bawang putih, cabai merah, cabai hijau"
+        ],
+        "gold_doc_ids": [
+          "24975670"
+        ]
+      },
+      {
+        "category": "ayam",
+        "title": "Ayam Panggang Teflon",
+        "query": [
+          "ayam, madu, saus tiram, kecap manis, kemiri, bawang putih",
+          "ayam, panggang teflon, jeruk nipis, asam jawa, gula merah",
+          "ayam, saus tiram, kecap manis, jahe, bawang merah",
+          "ayam, madu, lada bubuk, ketumbar, bawang putih",
+          "ayam, kemiri, jahe, madu, kecap manis"
+        ],
+        "gold_doc_ids": [
+          "24983731"
+        ]
+      },
+      {
+        "category": "ayam",
+        "title": "Chicken Spicy Wings",
+        "query": [
+          "ayam, saus sambal, saus tomat, saus tiram, bawang putih bubuk",
+          "ayam, saus sambal, paprika, cabe bubuk, palm sugar",
+          "sayap ayam, saus sambal, saus tiram, minyak wijen",
+          "ayam, spicy wings, saus tomat, cabe bubuk",
+          "ayam, saus tiram, saus sambal, lada bubuk",
+          "sayap ayam, saus sambal, bawang putih bubuk, minyak wijen"
+        ],
+        "gold_doc_ids": [
+          "24975281"
+        ]
+      },
+      {
+        "category": "ayam",
+        "title": "Ayam Goreng Ketumbar",
+        "query": [
+          "ayam, ketumbar, bawang putih, bawang merah, maizena",
+          "ayam, ketumbar butir, susu uht, daun jeruk, kemiri",
+          "ayam, goreng, ketumbar, kunyit, jahe, bawang putih",
+          "ayam, maizena, ketumbar, bawang merah, bawang putih",
+          "ayam, ketumbar, kaldu jamur, garam, susu uht"
+        ],
+        "gold_doc_ids": [
+          "24978641"
+        ]
+      },
+      {
+        "category": "ayam",
+        "title": "Ayam Goreng Mentega",
+        "query": [
+          "ayam, mentega, kecap manis, saus tiram, kecap inggris, bawang putih",
+          "ayam, bawang bombai, margarin, kecap asin, saus tiram",
+          "ayam, mentega, kecap inggris, gula pasir, bawang putih",
+          "ayam, goreng, mentega, kecap manis, bawang bombai",
+          "ayam, margarin, kecap manis, saus tiram, bawang putih"
+        ],
+        "gold_doc_ids": [
+          "24978217"
+        ]
+      },
+      {
+        "category": "ayam",
+        "title": "Ayam Suwir Pedas Daun Jeruk Kemangi",
+        "query": [
+          "ayam, daun jeruk, kemangi, cabai merah, bawang putih, bawang merah",
+          "ayam, kemangi, daun jeruk, cabe rawit, kunyit",
+          "ayam, kemangi, daun salam, sereh, jahe, cabe merah",
+          "ayam suwir, daun jeruk, kemangi, cabe merah, bawang merah",
+          "ayam, daun jeruk, cabe merah, bawang putih, bawang merah"
+        ],
+        "gold_doc_ids": [
+          "24984015"
+        ]
+      },
+      {
+        "category": "ayam",
+        "title": "Gongso Ayam Pedas Manis",
+        "query": [
+          "ayam, kecap manis, cabe merah, bawang putih, bawang merah",
+          "ayam, pedas manis, cabe setan, kecap, daun salam",
+          "ayam, gongso, bawang merah, cabe merah, kemiri",
+          "ayam, gula aren, kecap, cabe merah, bawang putih",
+          "ayam, daun salam, jahe, cabe merah, kecap manis"
+        ],
+        "gold_doc_ids": [
+          "24976041"
+        ]
+      },
+      {
+        "category": "ayam",
+        "title": "Tumis Ayam Pedas Daun Jeruk",
+        "query": [
+          "ayam, daun jeruk, cabai merah, bawang putih, bawang merah",
+          "ayam, tumis, daun jeruk, cabai hijau, cabai merah",
+          "ayam, daun jeruk, saos tiram, bawang putih",
+          "ayam, tumis pedas, daun jeruk, cabai merah, saori saus tiram",
+          "ayam, daun jeruk, cabai, gula, lada, garam"
+        ],
+        "gold_doc_ids": [
+          "24984009"
+        ]
+      },
+      {
+        "category": "daging sapi",
+        "title": "Lapis Daging Surabaya Empuk dan Gurih",
+        "query": [
+          "daging sapi, kecap manis, bawang putih, bawang merah, kemiri, pala",
+          "daging sapi, lapis, lengkuas, daun salam, tomat, bawang merah",
+          "daging sapi, kecap manis, bawang putih, kemiri, pala bubuk",
+          "daging sapi, laos, daun salam, bawang putih, kemiri",
+          "daging sapi, tumis, kecap manis, bawang merah, sereh"
+        ],
+        "gold_doc_ids": [
+          "24976347"
+        ]
+      },
+      {
+        "category": "daging sapi",
+        "title": "Kalio Daging khas Minang",
+        "query": [
+          "daging sapi, santan, cabe giling, bawang merah, bawang putih, jahe",
+          "daging sapi, santan, ketumbar, cengkeh, kapulaga, kayumanis",
+          "daging sapi, kalio, lengkuas, serai, daun jeruk, daun kunyit",
+          "daging sapi, bumbu halus, bumbu rempah, santan, bunga lawang",
+          "daging sapi, ketumbar bubuk, pala, cabe jawa, santan"
+        ],
+        "gold_doc_ids": ["24983951"]
+      },
+      {
+        "category": "daging sapi",
+        "title": "Soto Daging",
+        "query": [
+          "daging sapi, bawang putih, bumbu soto instan, daun bawang, seledri",
+          "daging sapi, soto, jahe, merica, garam, gula",
+          "daging sapi, air, bawang putih, seledri, penyedap",
+          "soto daging, bumbu instan, jahe, daun bawang",
+          "daging sapi, kuah soto, bawang putih, garam, kaldu"
+        ],
+        "gold_doc_ids": ["24973685"]
+      },
+      {
+        "category": "daging sapi",
+        "title": "Gepuk Daging",
+        "query": [
+          "daging sapi, santan, bawang merah, bawang putih, ketumbar, kemiri",
+          "daging sapi, gepuk, laos, daun salam, serai",
+          "daging sapi, santan kara, gula merah, garam, asam jawa",
+          "daging sapi, goreng, bumbu gepuk, bawang putih, ketumbar",
+          "daging sapi, kemiri, laos, serai, daun salam"
+        ],
+        "gold_doc_ids": ["24983605"]
+      },
+      {
+        "category": "daging sapi",
+        "title": "Kalio Daging khas Minangkabau",
+        "query": [
+          "daging sapi, bumbu rendang, bawang merah, bawang putih, kemiri",
+          "daging sapi, kalio, daun jeruk, serai, daun kunyit, santan",
+          "daging sapi, rendang, gula merah, cabe bubuk, lengkuas",
+          "daging sapi, santan, bumbu cemplung, daun salam",
+          "daging sapi, bumbu halus, bawang merah, kemiri, garam"
+        ],
+        "gold_doc_ids": ["24816201"]
+      },
+      {
+        "category": "ikan",
+        "title": "Ikan Goreng Kecap",
+        "query": [
+          "ikan, kecap manis, bawang putih, cabe rawit, garam",
+          "ikan, goreng, kecap, bawang putih, cabe merah",
+          "ikan, kecap manis, bawang putih cincang, minyak goreng",
+          "ikan, goreng kecap, cabe rawit, bawang putih, air",
+          "ikan, saus kecap, cabe rawit, bawang putih"
+        ],
+        "gold_doc_ids": ["24973558"]
+      },
+      {
+        "category": "ikan",
+        "title": "Kuah Pedas Kepala Ikan Patin",
+        "query": [
+          "ikan patin, tomat hijau, timun, daun salam, serai",
+          "ikan, kuah pedas, kunyit, jahe, kencur, lengkuas",
+          "ikan patin, kuah asam pedas, cabe rawit, bawang merah",
+          "ikan, bumbu halus, ketumbar, pala, kemiri, terasi",
+          "kepala ikan, kuah pedas, daun salam, tomat, cabe rawit"
+        ],
+        "gold_doc_ids": ["24730348"]
+      },
+      {
+        "category": "ikan",
+        "title": "Pampis Cakalang Asap",
+        "query": [
+          "ikan cakalang asap, kemangi, tomat, bawang merah, cabe merah",
+          "cakalang asap, pampis, jahe, daun jeruk, daun kunyit",
+          "ikan, pampis, kemangi, bawang merah, cabe rawit",
+          "cakalang asap, bawang merah, cabe merah, jahe, daun jeruk",
+          "ikan asap, pampis, kemangi, daun pandan, tomat"
+        ],
+        "gold_doc_ids": ["23902397"]
+      },
+      {
+        "category": "ikan",
+        "title": "Ikan Kembung Pedas Ketumbar",
+        "query": [
+          "ikan kembung, ketumbar, bawang merah, bawang putih, cabe merah",
+          "ikan kembung, pedas, gula merah, garam, merica",
+          "ikan, bumbu ketumbar, cabe rawit, minyak sayur",
+          "ikan, goreng, bawang merah, bawang putih, cabe merah",
+          "ikan kembung, bumbu marinasi, ketumbar, cabe rawit"
+        ],
+        "gold_doc_ids": ["24984268"]
+      },
+      {
+        "category": "ikan",
+        "title": "Pindang Ikan Tongkol Tumis Pedas",
+        "query": [
+          "ikan tongkol, cabe rawit, bawang merah, bawang putih, tomat",
+          "ikan tongkol, kecap manis, saos tiram, daun salam",
+          "tongkol, jeruk nipis, cabe keriting, bawang merah, gula merah",
+          "ikan tongkol, tumis pedas, bawang putih, cabe rawit",
+          "ikan tongkol, kecap manis, garam, gula merah, kaldu jamur"
+        ],
+        "gold_doc_ids": ["24963693"]
+      },
+      {
+        "category": "udang",
+        "title": "Udang Saos Padang",
+        "query": [
+          "udang, saus tomat, saus tiram, bawang merah, bawang putih",
+          "udang, saos padang, daun jeruk, serai, jahe",
+          "udang, bawang bombai, daun bawang, tomat, cabe merah",
+          "udang, saus padang, bawang putih, jahe, daun jeruk",
+          "udang, cabai merah, bawang merah, saus tomat, saus tiram"
+        ],
+        "gold_doc_ids": ["24971719"]
+      },
+      {
+        "category": "udang",
+        "title": "Ranjungan Udang Saus Padang",
+        "query": [
+          "udang, ranjungan, saus sambal, saus tiram, saus tomat",
+          "udang, jahe, pala bubuk, daun jeruk, serai",
+          "udang, cabe merah, bawang putih, bawang merah, jahe",
+          "udang, saus padang, daun jeruk, gula, garam",
+          "udang, ranjungan, saus tiram, cabai, bawang putih"
+        ],
+        "gold_doc_ids": ["13676196"]
+      },
+      {
+        "category": "udang",
+        "title": "Udang Goreng Mentega",
+        "query": [
+          "udang, mentega, bawang bombay, bawang putih, kecap manis",
+          "udang, saus tiram, kecap inggris, garam, lada bubuk",
+          "udang, jeruk nipis, mentega, daun bawang, saus tiram",
+          "udang, goreng mentega, bawang putih, bawang bombay",
+          "udang, mentega, kecap inggris, kecap manis, saus tiram"
+        ],
+        "gold_doc_ids": ["24965543"]
+      },
+      {
+        "category": "udang",
+        "title": "Botok Udang Bakso",
+        "query": [
+          "udang, tahu, bakso, kelapa parut, daun kemangi",
+          "udang, cabe rawit, tomat, daun jeruk, kencur",
+          "udang, botok, petai cina, kemangi, telur rebus",
+          "udang, kelapa, cabe ijo, bawang merah, bawang putih",
+          "udang, tahu, bakso, kelapa parut, daun pisang"
+        ],
+        "gold_doc_ids": ["24979875"]
+      },
+      {
+        "category": "udang",
+        "title": "Tumis Udang Sederhana",
+        "query": [
+          "udang, bawang merah, bawang putih, cabai merah, cabai rawit",
+          "udang, saus tiram, kecap asin, gula, penyedap",
+          "udang, tumis, daun bawang, lada bubuk, minyak goreng",
+          "udang, cabai rawit, bawang putih, saus tiram",
+          "udang, bawang merah, cabai merah, kecap asin"
+        ],
+        "gold_doc_ids": ["24966502"]
+      },
+      {
+        "category": "cumi",
+        "title": "Sambal Baby Cumi Homemade",
+        "query": [
+          "baby cumi, daun jeruk, daun salam, terasi, cabe merah",
+          "baby cumi, bawang merah, bawang putih, garam, gula",
+          "cumi, sambal, ajinomoto, terasi, daun jeruk",
+          "baby cumi, daun salam, cabe merah keriting, bawang merah",
+          "cumi, sambal, garam, penyedap rasa, daun jeruk"
+        ],
+        "gold_doc_ids": ["24974381"]
+      },
+      {
+        "category": "cumi",
+        "title": "Cumi Saos Padang",
+        "query": [
+          "cumi, saus tomat, saus sambal, saus tiram, bawang putih",
+          "cumi, bawang bombay, jagung manis, serai, daun salam",
+          "cumi, cabe merah, kemiri, gula, garam",
+          "cumi, saos padang, tomat, bawang merah, bawang putih",
+          "cumi, daun salam, daun jeruk, saus tiram, cabai"
+        ],
+        "gold_doc_ids": ["24978341"]
+      },
+      {
+        "category": "cumi",
+        "title": "Cumi Laut Pedas ala Meldi",
+        "query": [
+          "cumi, cabe merah, cabe hijau, bawang merah, bawang putih",
+          "cumi, saus tiram, garam, gula, penyedap rasa",
+          "cumi, pedas, bawang putih, cabe setan, minyak",
+          "cumi, saus tiram, bawang merah, bawang putih, cabe merah",
+          "cumi, cabe setan, gula, garam, penyedap rasa"
+        ],
+        "gold_doc_ids": ["24976090"]
+      },
+      {
+        "category": "cumi",
+        "title": "Cumi Kuah Hitam Pedas Khas Tuban",
+        "query": [
+          "cumi, tinta cumi, tomat, bawang merah, bawang putih",
+          "cumi, daun salam, daun jeruk, lengkuas, kecap manis",
+          "cumi, kuah hitam, cabe rawit, garam, kaldu jamur",
+          "cumi, bawang putih, daun bawang, tomat, lengkuas",
+          "cumi, pedas, daun salam, daun jeruk, cabe rawit"
+        ],
+        "gold_doc_ids": ["24967229"]
+      },
+      {
+        "category": "cumi",
+        "title": "Gulai Cumi Bunting",
+        "query": [
+          "cumi, santan, kunyit, jahe, serai, daun jeruk",
+          "cumi, tahu, daun bawang, kemiri, ketumbar bubuk",
+          "cumi, santan, lengkuas, cabe merah, bawang putih",
+          "cumi, gulai, daun salam, bawang merah, cabai rawit",
+          "cumi, tahu putih, kunyit, ketumbar, daun jeruk purut"
+        ],
+        "gold_doc_ids": ["24965956"]
+      },
+      {
+        "category": "tahu",
+        "title": "Tahu Telor",
+        "query": [
+          "tahu, telur, bumbu pecel, toge, timun",
+          "tahu, telur, bumbu kacang, bawang goreng",
+          "tahu putih, telur, bumbu gado-gado, sayur rebus",
+          "tahu, toge, telur dadar, bumbu kacang",
+          "tahu, telur, bumbu pecel instan, timun, toge"
+        ],
+        "gold_doc_ids": ["24956564"]
+      },
+      {
+        "category": "tahu",
+        "title": "Tahu Goreng Ketumbar",
+        "query": [
+          "tahu putih, bawang putih, ketumbar, garam",
+          "tahu, ketumbar, bawang putih, minyak goreng",
+          "tahu, bawang putih, ketumbar, penyedap rasa",
+          "tahu, goreng, ketumbar, bawang putih",
+          "tahu, air, ketumbar, garam, minyak"
+        ],
+        "gold_doc_ids": ["24984371"]
+      },
+      {
+        "category": "tahu",
+        "title": "Tofu Egg Roll",
+        "query": [
+          "tahu putih, ayam, telur, tepung terigu, maizena",
+          "tahu, ayam, saus tiram, minyak wijen, kecap asin",
+          "tahu, telur, tepung terigu, pewarna kuning, kaldu bubuk",
+          "tahu putih, ayam, bawang putih, daun bawang, saus tiram",
+          "tahu, tepung maizena, telur, gula pasir, minyak goreng"
+        ],
+        "gold_doc_ids": ["24969118"]
+      },
+      {
+        "category": "tahu",
+        "title": "Tahu Balado",
+        "query": [
+          "tahu, tomat, bawang merah, bawang putih, cabe merah",
+          "tahu, daun jeruk, kecap manis, gula, garam",
+          "tahu, bawang putih, cabe merah, penyedap rasa",
+          "tahu, balado, bawang merah, tomat, cabai merah",
+          "tahu, garam, gula, bawang merah, daun jeruk"
+        ],
+        "gold_doc_ids": ["24984423"]
+      },
+      {
+        "category": "tahu",
+        "title": "Tahu Chili Padi",
+        "query": [
+          "tahu putih, cabe rawit, bawang merah, bawang putih, maizena",
+          "tahu, cabe rawit, tepung terigu, margarin, gula",
+          "tahu, bawang merah, cabe rawit, tepung maizena",
+          "tahu, garam, kaldu bubuk, bawang putih, cabe rawit",
+          "tahu, maizena, cabe rawit, gula pasir, margarin"
+        ],
+        "gold_doc_ids": ["24964585"]
+      },
+      {
+        "category": "tempe",
+        "title": "Sambel Lado Kentang dan Tempe Iris Cabe",
+        "query": [
+          "tempe, kentang, cabe merah, bawang merah, bawang putih, tomat",
+          "tempe, kentang, cabe hijau, bawang merah, bawang putih",
+          "tempe, sambal, cabe merah, tomat",
+          "tempe, kentang, cabe merah, cabe hijau, minyak goreng",
+          "tempe, kentang, sambal, garam, gula"
+        ],
+        "gold_doc_ids": [
+          "24973708"
+        ]
+      },
+      {
+        "category": "tempe",
+        "title": "Kering Tempe Kacang Teri",
+        "query": [
+          "tempe, kacang tanah, teri, bawang merah, bawang putih",
+          "tempe, teri, daun jeruk, gula merah, garam",
+          "tempe, kering, kacang tanah, gula merah",
+          "tempe, teri, bawang putih, merica, daun jeruk",
+          "tempe, kacang tanah, gula merah, penyedap rasa"
+        ],
+        "gold_doc_ids": [
+          "24966104"
+        ]
+      },
+      {
+        "category": "tempe",
+        "title": "Tempe Bacem Basah",
+        "query": [
+          "tempe, gula merah, bawang putih, bawang merah, ketumbar",
+          "tempe, daun salam, kemiri, asam jawa, kaldu bubuk",
+          "tempe, bacem, gula merah, bawang putih",
+          "tempe, gula merah, daun salam, ketumbar",
+          "tempe, bacem, kemiri, asam jawa, garam"
+        ],
+        "gold_doc_ids": [
+          "24959989"
+        ]
+      },
+      {
+        "category": "tempe",
+        "title": "Jangan Lombok Tempe",
+        "query": [
+          "tempe, cabe merah, cabe hijau, bawang merah, santan",
+          "tempe, cabe rawit, tomat, bawang putih, kemiri",
+          "tempe, santan, cabe merah, daun salam, lengkuas",
+          "tempe, ebi, santan, bawang merah, lada",
+          "tempe, cabe merah, santan, daun salam"
+        ],
+        "gold_doc_ids": [
+          "24983854"
+        ]
+      },
+      {
+        "category": "tempe",
+        "title": "Tempe Orek Versi Sat Set",
+        "query": [
+          "tempe, bawang merah, bawang putih, cabe merah, gula merah",
+          "tempe, kecap manis, air asam jawa, daun jeruk, daun salam",
+          "tempe, orek, kecap manis, bawang merah, bawang putih",
+          "tempe, gula merah, daun jeruk, lada, garam",
+          "tempe, kecap manis, cabe merah, gula merah"
+        ],
+        "gold_doc_ids": [
+          "24958576"
+        ]
+      },
+      {
+        "category": "sayuran",
+        "title": "Capcay Sayur",
+        "query": [
+          "dada ayam, bakso sapi, wortel, brokoli, kol putih, pakcoy",
+          "ayam, bakso, saos tiram, saos sambal, kecap manis",
+          "sayur, ayam, wortel, brokoli, jamur kuping",
+          "sayuran, saus tiram, minyak wijen, bawang putih, bawang bombay",
+          "ayam, sayur, kol, wortel, saos sambal"
+        ],
+        "gold_doc_ids": [
+          "24972346"
+        ]
+      },
+      {
+        "category": "sayuran",
+        "title": "Sayur Gori Sayur Tewel",
+        "query": [
+          "gori, nangka muda, santan, daun salam, kemiri",
+          "sayur gori, nangka muda, santan kara, bawang merah",
+          "nangka muda, santan, daun salam, kemiri",
+          "sayur, gori, santan kara, air rebusan",
+          "gori, santan, daun salam, kemiri, bawang merah"
+        ],
+        "gold_doc_ids": [
+          "24984291"
+        ]
+      },
+      {
+        "category": "sayuran",
+        "title": "Sayur Urap",
+        "query": [
+          "kelapa, toge, kangkung, kacang panjang, cabai merah, bawang putih",
+          "sayur urap, kelapa parut, toge, kangkung, bawang merah",
+          "urap, sayuran, kelapa, cabai, kencur",
+          "sayur urap, kelapa, daun jeruk, terasi",
+          "kelapa, sayuran rebus, cabai, bawang merah, kencur"
+        ],
+        "gold_doc_ids": [
+          "23968910"
+        ]
+      },
+      {
+        "category": "sayuran",
+        "title": "Tumis Kangkung",
+        "query": [
+          "kangkung, bawang putih, bawang merah, kecap manis, saus tiram",
+          "kangkung, bawang putih, gula, garam, kecap inggris",
+          "tumis kangkung, bawang putih, bawang merah, minyak goreng",
+          "kangkung, saus tiram, kecap manis, bawang putih",
+          "sayur kangkung, bawang putih, garam, kecap manis"
+        ],
+        "gold_doc_ids": [
+          "24973574"
+        ]
+      },
+      {
+        "category": "sayuran",
+        "title": "Cap Cay Goreng Chinese",
+        "query": [
+          "dada ayam, wortel, kembang kol, sawi putih, saos tiram",
+          "capcay, ayam, bawang putih, kecap asin, minyak wijen",
+          "sayur, ayam, wortel, pakcoy, bawang bombay",
+          "ayam, capcay goreng, saos tiram, kecap ikan",
+          "capcay, ayam, bawang putih, kecap asin"
+        ],
+        "gold_doc_ids": [
+          "24954919"
+        ]
+      },
+      {
+        "category": "telur",
+        "title": "Telur Saus Tiram Devina Hermawan",
+        "query": [
+          "telur, saus tiram, kecap asin, bawang putih, bawang bombai",
+          "telur, tepung terigu, saus tiram, daun bawang",
+          "telur, bawang putih, saus tiram, kecap asin, gula",
+          "telur, saus tiram, maizena, minyak wijen",
+          "telur, bawang putih, bawang bombai, saus tiram"
+        ],
+        "gold_doc_ids": [
+          "24973442"
+        ]
+      },
+      {
+        "category": "telur",
+        "title": "Nasi Goreng Telor Dadar",
+        "query": [
+          "telur, nasi, kecap asin, bawang putih, daun bawang",
+          "nasi goreng, telur dadar, bawang merah, kecap ikan",
+          "telur, nasi dingin, bawang putih, kemiri, kecap",
+          "nasi goreng, telur, sawi, kecap manis",
+          "telur, nasi goreng, bawang putih, ketumbar, lada"
+        ],
+        "gold_doc_ids": [
+          "24983960"
+        ]
+      },
+      {
+        "category": "telur",
+        "title": "Sosis Telur Tanpa Ayam",
+        "query": [
+          "telur, wortel, bawang putih, daun bawang, lada",
+          "sosis telur, wortel parut, bawang putih, garam",
+          "telur, wortel, ketumbar bubuk, minyak kelapa",
+          "telur, bawang putih, garam, plastik unyil",
+          "telur, daun bawang, lada bubuk, minyak kelapa"
+        ],
+        "gold_doc_ids": [
+          "24969508"
+        ]
+      },
+      {
+        "category": "telur",
+        "title": "Telur Santan Keju Susu Kukus MPASI",
+        "query": [
+          "telur, santan, keju, susu, gula aren",
+          "telur, santan, keju parut, oatmeal, butter",
+          "telur, santan, susu, keju, gula",
+          "telur, santan, oatmeal, keju parut",
+          "telur, santan, susu uht, keju, gula aren"
+        ],
+        "gold_doc_ids": [
+          "24983908"
+        ]
+      },
+      {
+        "category": "telur",
+        "title": "Telur Balado",
+        "query": [
+          "telur, bawang merah, bawang putih, cabe merah, tomat",
+          "telur, cabe merah keriting, bawang putih, daun salam",
+          "telur rebus, cabe merah, bawang merah, bawang putih",
+          "telur, bumbu balado, tomat, sereh, cabe rawit",
+          "telur, bawang putih, cabe merah besar, daun salam"
+        ],
+        "gold_doc_ids": [
+          "24960564"
+        ]
+      },
+      {
+        "category": "kue bolu",
+        "title": "Set Jajanan Pasar Bolu Pandan Sukade Risol Sosis Spicy Mayo Nagasari Hunkwe Nangka Mutiara",
+        "query": [
+          "tepung terigu, telur, minyak goreng, susu cair, pandan",
+          "bolu pandan, tepung terigu, telur ayam, minyak goreng",
+          "tepung terigu, susu, telur, sp, pandan, sukade",
+          "tepung hunkwe, santan, sagu mutiara, nangka, gula",
+          "tepung terigu, telur, susu cair, pandan, minyak"
+        ],
+        "gold_doc_ids": [
+          "24977867"
+        ]
+      },
+      {
+        "category": "kue bolu",
+        "title": "Bolu Pisang Kepok",
+        "query": [
+          "pisang kepok, telur, gula, tepung terigu, mentega",
+          "bolu pisang, tepung terigu, gula, susu cair, keju",
+          "pisang, tepung terigu, baking soda, baking powder",
+          "pisang kepok, telur, gula, tepung terigu, vanili",
+          "pisang, terigu, susu cair, butter, keju"
+        ],
+        "gold_doc_ids": [
+          "24467036"
+        ]
+      },
+      {
+        "category": "kue bolu",
+        "title": "Bolu Kukus",
+        "query": [
+          "telur, gula pasir, tepung terigu, susu cair, minyak goreng",
+          "bolu kukus, telur, sp, susu bubuk, baking powder",
+          "telur, gula, tepung terigu, vanili, susu uht",
+          "tepung terigu, telur, gula pasir, susu bubuk, minyak",
+          "telur, terigu, sp, susu, minyak goreng"
+        ],
+        "gold_doc_ids": [
+          "24983114"
+        ]
+      },
+      {
+        "category": "kue bolu",
+        "title": "Onbitjkoek Roll Cake",
+        "query": [
+          "kuning telur, gula palm, tepung terigu, kayu manis, butter",
+          "telur, tepung terigu, gula palm, bumbu spikuk, butter",
+          "onbitjkoek, telur, kayu manis, tepung terigu, almond",
+          "roll cake, telur, tepung terigu, gula, butter",
+          "telur, gula palm, tepung terigu, bumbu spikuk"
+        ],
+        "gold_doc_ids": [
+          "24982452"
+        ]
+      },
+      {
+        "category": "kue bolu",
+        "title": "Bolu Ngeprul",
+        "query": [
+          "telur, gula pasir, tepung terigu, minyak sayur, susu bubuk",
+          "bolu ngeprul, telur, tepung terigu, sp, minyak sayur",
+          "tepung terigu, gula, maizena, susu bubuk, minyak",
+          "telur, sp, gula, terigu, minyak sayur",
+          "bolu, telur, tepung, gula, minyak"
+        ],
+        "gold_doc_ids": [
+          "24982678"
+        ]
+      },
+      {
+        "category": "brownies",
+        "title": "Banana Choco brownies pisang",
+        "query": [
+          "pisang, coklat bubuk, tepung terigu",
+          "brownies, pisang, coklat bubuk, gula pasir",
+          "brownies, pisang, minyak sayur",
+          "brownies, tepung terigu, pisang, soda kue",
+          "brownies, pisang, coklat bubuk, garam"
+        ],
+        "gold_doc_ids": ["24984503"]
+      },
+      {
+        "category": "brownies",
+        "title": "Fuggy Brownies Telur Shiny Crust by Ibnu Kitchen",
+        "query": [
+          "dcc, margarin, telur, cokelat bubuk",
+          "brownies, telur, gula halus, coklat",
+          "brownies, dcc, margarin, tepung terigu",
+          "brownies shiny crust, telur, cokelat bubuk",
+          "brownies, margarin, minyak sayur, telur"
+        ],
+        "gold_doc_ids": ["24978620"]
+      },
+      {
+        "category": "brownies",
+        "title": "Brownies kukus stroberi pop ice",
+        "query": [
+          "pop ice, stroberi, coklat batang, tepung terigu",
+          "brownies kukus, pop ice stroberi, telur",
+          "brownies, tepung terigu, coklat batang stroberi",
+          "brownies, telur, mentega, pop ice stroberi",
+          "brownies kukus, baking powder, coklat stroberi"
+        ],
+        "gold_doc_ids": ["24979431"]
+      },
+      {
+        "category": "brownies",
+        "title": "Brownies Kukus Ala Amanda",
+        "query": [
+          "brownies kukus, dark chocolate, margarin, telur",
+          "brownies, cokelat bubuk, tepung terigu, sp",
+          "brownies, gula pasir, baking powder, telur",
+          "brownies, pasta coklat, skm coklat",
+          "brownies kukus, butter cream, meises"
+        ],
+        "gold_doc_ids": ["24978336"]
+      },
+      {
+        "category": "brownies",
+        "title": "Brownies Cookies",
+        "query": [
+          "dark cooking chocolate, margarin, butter, tepung terigu",
+          "brownies, cookies, cokelat bubuk, gula pasir",
+          "brownies cookies, telur, choco chips",
+          "brownies, keju parut, soda kue, telur",
+          "brownies cookies, vanili, cokelat cincang"
+        ],
+        "gold_doc_ids": ["24978370"]
+      },
+      {
+        "category": "cheesecake",
+        "title": "Marble Cheesecake Merah Putih",
+        "query": [
+          "cheesecake, susu cair, butter, cream cheese",
+          "cheesecake, terigu, maizena, telur",
+          "cheesecake, putih telur, gula halus",
+          "cheesecake, vanilla ekstrak, lemon",
+          "cheesecake, krim keju, mentega"
+        ],
+        "gold_doc_ids": ["24975685"]
+      },
+      {
+        "category": "cheesecake",
+        "title": "Resep Cheese Cake",
+        "query": [
+          "cheesecake, cream cheese, fresh cream, telur",
+          "cheesecake, gula pasir, tepung terigu",
+          "cheesecake, air lemon, biskuit ritz",
+          "cheesecake, butter, telur, cream cheese",
+          "cheesecake, dasar kue, cream cheese, gula"
+        ],
+        "gold_doc_ids": ["24971161"]
+      },
+      {
+        "category": "cheesecake",
+        "title": "Burnt basque cheesecake",
+        "query": [
+          "cream cheese, gula, telur, vanilla, lemon juice, maizena, whipping cream",
+          "burnt basque, cream cheese, telur, whipping cream",
+          "cheesecake, maizena, vanilla, gula pasir",
+          "burnt cheesecake, lemon juice, cream cheese",
+          "cheesecake, anchor, whipping cream, telur"
+        ],
+        "gold_doc_ids": ["24953861"]
+      },
+      {
+        "category": "cheesecake",
+        "title": "Cheesecake Redvelvet GAS",
+        "query": [
+          "oreo redvelvet, keju parut, susu, maizena",
+          "cheesecake, oreo redvelvet, susu, keju",
+          "cheesecake, larutan maizena, redvelvet",
+          "redvelvet, keju parut, susu, oreo",
+          "cheesecake, susu, keju parut, oreo redvelvet"
+        ],
+        "gold_doc_ids": ["24967016"]
+      },
+      {
+        "category": "cheesecake",
+        "title": "Burnt Basque Strawberry Cheesecake",
+        "query": [
+          "prochiz spread, telur, tapioka, yoghurt, strawberry",
+          "burnt basque, strawberry, cream cheese, yoghurt",
+          "cheesecake, prochiz, gula pasir, vanilla powder",
+          "cheesecake, telur, strawberry, yoghurt cimory",
+          "cheesecake, burnt basque, strawberry segar"
+        ],
+        "gold_doc_ids": ["24259173"]
+      },
+      {
+        "category": "gorengan",
+        "title": "Lumpia ayam ala bocil",
+        "query": [
+          "ayam, telur bebek, bawang putih, tepung tapioka, wortel, kulit lumpia",
+          "lumpia, ayam, saos tiram, jamur kuping",
+          "lumpia ayam, daun bawang, macaroni, telur bebek",
+          "lumpia, ayam, tepung tapioka, daun pisang",
+          "lumpia ayam, wortel, jamur kuping, kulit lumpia"
+        ],
+        "gold_doc_ids": ["24984553"]
+      },
+      {
+        "category": "gorengan",
+        "title": "Pisang coklat kulit lumpia pisang aroma mudah",
+        "query": [
+          "pisang, coklat tabur, kulit lumpia",
+          "pisang coklat, lumpia, ceres, minyak goreng",
+          "pisang, kulit lumpia, tepung perekat",
+          "gorengan pisang, coklat, lumpia",
+          "pisang aroma, coklat tabur, kulit lumpia"
+        ],
+        "gold_doc_ids": ["24983847"]
+      },
+      {
+        "category": "gorengan",
+        "title": "Gorengan Apel Rendah gluten vegan tanpa telur",
+        "query": [
+          "apel, tepung beras, tapioka, vanilla bubuk",
+          "gorengan, apel, baking powder, tepung tapioka",
+          "apel, tepung beras, air matang, minyak goreng",
+          "gorengan apel, rendah gluten, tanpa telur",
+          "apel goreng, tepung tapioka, vanilla bubuk"
+        ],
+        "gold_doc_ids": ["24983741"]
+      },
+      {
+        "category": "gorengan",
+        "title": "Pisang Goreng Wijen Kayumanis",
+        "query": [
+          "pisang, tepung pisang goreng, kayumanis, wijen",
+          "pisang goreng, kayumanis bubuk, wijen hitam putih",
+          "pisang barangan, tepung pisang goreng, kayumanis",
+          "gorengan, pisang, wijen, tepung instan",
+          "pisang goreng, kayumanis, air"
+        ],
+        "gold_doc_ids": ["24982957"]
+      },
+      {
+        "category": "gorengan",
+        "title": "Menu ultah simpel bakwan mie goreng sambal kacang es gula bali",
+        "query": [
+          "mie telur, wortel, sawi hijau, bakso sapi, bawang putih, kecap manis",
+          "mie goreng, kacang tanah, sambal kacang, wortel, bawang merah",
+          "bakwan, tepung terigu, tepung maizena, daun bawang, kol",
+          "bakwan mie, tepung tapioka, kaldu bubuk, lada bubuk",
+          "mie goreng, kecap manis, bawang putih, sambal kacang"
+        ],
+        "gold_doc_ids": ["24972882"]
+      },
+      {
+        "category": "donat",
+        "title": "Donat Viral No Mixer No uleni Hasilnya empuk mengembang gemoy",
+        "query": [
+          "tepung terigu, UHT, kentang kukus, telur, gula pasir, margarin, ragi",
+          "donat, tepung terigu, kentang, susu UHT",
+          "donat empuk, tanpa mixer, ragi instan, margarin",
+          "donat kentang, gula pasir, telur, susu",
+          "tepung terigu, ragi instan, margarin, kentang halus"
+        ],
+        "gold_doc_ids": ["24983111"]
+      },
+      {
+        "category": "donat",
+        "title": "Donat kampung tanpa telur",
+        "query": [
+          "tepung terigu, gula pasir, ragi, susu bubuk, margarin, garam",
+          "donat kampung, tanpa telur, tepung cakra",
+          "donat, susu bubuk, ragi, air dingin",
+          "donat sederhana, tepung terigu, gula pasir, margarin",
+          "donat tradisional, tepung cakra, susu bubuk, air"
+        ],
+        "gold_doc_ids": ["24967353"]
+      },
+      {
+        "category": "donat",
+        "title": "Donat Kentang Merdeka",
+        "query": [
+          "tepung cakra, tepung segitiga, kentang kukus, susu bubuk, ragi",
+          "donat kentang, gula pasir, mentega, susu full cream",
+          "donat merah putih, kentang, DCC putih, keju",
+          "donat kentang, ragi instan, pewarna merah, mentega",
+          "tepung terigu, susu bubuk, kentang kukus, gula pasir"
+        ],
+        "gold_doc_ids": ["24977386"]
+      },
+      {
+        "category": "donat",
+        "title": "Donat Pisang Wijen",
+        "query": [
+          "pisang, gula pasir, vanila bubuk, tepung ketan, wijen",
+          "donat pisang, tepung ketan putih, pewarna kuning",
+          "pisang saba, tepung ketan, wijen, gula pasir",
+          "donat, pisang, wijen, garam halus",
+          "donat pisang, gula, pewarna oranye, vanila"
+        ],
+        "gold_doc_ids": ["24981817"]
+      },
+      {
+        "category": "donat",
+        "title": "Donat",
+        "query": [
+          "terigu, air, ragi, gula pasir, garam, mentega",
+          "donat klasik, tepung terigu, gula pasir",
+          "donat sederhana, ragi instan, mentega",
+          "donat, tepung terigu, air, ragi",
+          "donat empuk, gula, mentega, garam"
+        ],
+        "gold_doc_ids": ["24982685"]
+      },
+      {
+        "category": "siomay",
+        "title": "Siomay",
+        "query": [
+          "ayam fillet, udang, ikan tenggiri, bawang putih, tepung tapioka, terigu",
+          "ayam fillet, tepung tapioka, kecap asin, bawang putih",
+          "ayam, tepung terigu, tepung tapioka, daun bawang, bawang putih",
+          "ayam, udang, bawang putih, tepung tapioka",
+          "ayam fillet, daun bawang, merica, kecap asin"
+        ],
+        "gold_doc_ids": ["24953889"]
+      },
+      {
+        "category": "siomay",
+        "title": "Siomay Ayam Bandung Bumbu Kacang",
+        "query": [
+          "ayam fillet, tepung tapioka, bawang putih, daun bawang, kecap ikan",
+          "ayam, tepung tapioka, tepung terigu, kecap ikan",
+          "ayam, bawang putih, kecap ikan, tepung tapioka",
+          "ayam, gula pasir, garam, lada, kaldu ayam bubuk",
+          "ayam fillet, bawang putih, tepung tapioka"
+        ],
+        "gold_doc_ids": ["24977793"]
+      },
+      {
+        "category": "siomay",
+        "title": "Siomay Ayam Tahu Bayam Brazil",
+        "query": [
+          "ayam fillet, tahu putih, bayam, telur, bawang putih",
+          "ayam, tahu, tepung maizena, saos tiram",
+          "ayam, bayam brazil, tahu, kecap inggris",
+          "ayam, tepung tapioka, tepung maizena, bawang putih",
+          "ayam fillet, tahu putih, telur, bawang goreng"
+        ],
+        "gold_doc_ids": ["24940916"]
+      },
+      {
+        "category": "siomay",
+        "title": "Siomay",
+        "query": [
+          "telur, kentang, tahu, terigu, bawang putih",
+          "telur, kentang, tapioka, bawang putih",
+          "telur, tahu, kol, terigu",
+          "kentang, tahu, terigu, royco ayam",
+          "telur, kentang, terigu, bawang putih"
+        ],
+        "gold_doc_ids": ["24951590"]
+      },
+      {
+        "category": "risoles",
+        "title": "Risol Bihun Mini Risol hap",
+        "query": [
+          "bihun, kulit lumpia, wortel, telur, bawang putih",
+          "bihun, wortel, daun bawang, ebi, bawang putih",
+          "kulit lumpia, bihun, bawang merah, bawang putih",
+          "bihun, telur rebus, ebi, bawang putih",
+          "bihun, wortel, bawang putih, lada bubuk"
+        ],
+        "gold_doc_ids": ["24947253"]
+      },
+      {
+        "category": "risoles",
+        "title": "Risol Ayam Suwir Sambal Matah",
+        "query": [
+          "ayam suwir, tepung terigu, tepung maizena, bawang merah, bawang putih",
+          "ayam suwir, sosis, kentang, serai, daun jeruk",
+          "ayam, bawang merah, cabe rawit, serai, terasi",
+          "ayam suwir, tepung terigu, telur, susu cair",
+          "ayam, bawang merah, daun jeruk, jeruk nipis"
+        ],
+        "gold_doc_ids": ["24943525"]
+      },
+      {
+        "category": "risoles",
+        "title": "Risoles mochi coklat pisang",
+        "query": [
+          "tepung ketan, tepung terigu, coklat bubuk, pisang",
+          "tepung terigu, susu cair, telur, coklat bubuk",
+          "tepung ketan, tepung tapioka, gula halus, coklat bubuk",
+          "pisang, coklat, tepung ketan, telur",
+          "tepung terigu, butter, susu uht, pisang"
+        ],
+        "gold_doc_ids": ["24942644"]
+      },
+      {
+        "category": "pukis",
+        "title": "Pukis Kayu Manis Sourdough",
+        "query": [
+          "sourdough starter, tepung terigu, susu bubuk, kayu manis bubuk",
+          "tepung terigu, gula pasir, susu cair, telur",
+          "tepung terigu, kayu manis, gula, margarin",
+          "tepung terigu, telur, kayu manis, garam",
+          "sourdough, tepung terigu, susu, kayu manis"
+        ],
+        "gold_doc_ids": ["24982148"]
+      },
+      {
+        "category": "pukis",
+        "title": "Kue Pukis Original",
+        "query": [
+          "telur, gula pasir, tepung terigu, santan, ragi instan",
+          "tepung terigu, santan, telur, margarin cair",
+          "tepung terigu, gula pasir, SKM, keju parut",
+          "tepung terigu, telur, ragi instan, meses cokelat",
+          "telur, gula, tepung, santan, margarin"
+        ],
+        "gold_doc_ids": ["24969135"]
+      },
+      {
+        "category": "pukis",
+        "title": "Pukis menul anti gagal",
+        "query": [
+          "telur, tepung terigu, gula pasir, ragi instan, santan",
+          "tepung terigu, margarin, gula pasir, ragi, baking powder",
+          "tepung terigu, telur, santan hangat, pewarna makanan",
+          "tepung terigu, SKM, ragi instan, gula pasir",
+          "tepung terigu, margarin, telur, gula pasir"
+        ],
+        "gold_doc_ids": ["24949392"]
+      },
+      {
+        "category": "pukis",
+        "title": "Pukis susu",
+        "query": [
+          "telur, susu uht, tepung terigu, gula pasir, butter",
+          "tepung terigu, susu bubuk, telur, gula, butter",
+          "tepung terigu, susu uht, fernipan, vanilli pasta",
+          "telur, susu bubuk, terigu, margarin, gula",
+          "tepung terigu, susu, baking powder, butter"
+        ],
+        "gold_doc_ids": ["24948758"]
+      },
+      {
+        "category": "pukis",
+        "title": "Pukis toping keju kismis nangka choco chips",
+        "query": [
+          "tepung terigu, telur, gula, susu, margarin, keju parut",
+          "tepung terigu, gula pasir, telur, fermipan, susu",
+          "terigu, telur, gula, margarin, kismis",
+          "tepung terigu, vanili, telur, susu, keju",
+          "terigu, gula, susu, fermipan, keju parut"
+        ],
+        "gold_doc_ids": ["24947214"]
+      },
+      {
+        "category": "cilok",
+        "title": "Bumbu saus Kacang Bisa untuk cilok Pecel dll",
+        "query": [
+          "kacang tanah, bawang putih, bawang merah, daun jeruk, gula merah",
+          "kacang tanah, cabai merah, bawang putih, kecap manis",
+          "bumbu kacang, bawang putih, garam, air, gula",
+          "kacang tanah, gula merah, garam, bawang merah, air",
+          "saus kacang, cabai merah, bawang putih, daun jeruk"
+        ],
+        "gold_doc_ids": ["24978632"]
+      },
+      {
+        "category": "cilok",
+        "title": "Cilok kenyal seharian takaran sendok",
+        "query": [
+          "tepung terigu, tepung kanji, bawang putih, daun bawang",
+          "terigu, tapioka, bawang putih, garam, penyedap rasa",
+          "cilok, tepung kanji, bawang putih, garam",
+          "tepung tapioka, tepung terigu, bawang putih halus",
+          "cilok, tepung kanji, garam, bawang putih"
+        ],
+        "gold_doc_ids": ["24968278"]
+      },
+      {
+        "category": "cilok",
+        "title": "Cilok Aci Bumbu Kacang",
+        "query": [
+          "tepung terigu, tepung kanji, bawang putih, penyedap rasa",
+          "terigu, kanji, garam, air, bawang putih",
+          "cilok, tepung kanji, tepung terigu, garam",
+          "tepung terigu, tepung kanji, air, bawang putih",
+          "cilok, terigu, kanji, bawang putih"
+        ],
+        "gold_doc_ids": ["24923891"]
+      },
+      {
+        "category": "cilok",
+        "title": "Cilok Ayam Tetap Empuk Walaupun Udah Dingin",
+        "query": [
+          "tepung terigu, tepung tapioka, bawang putih, garam, lada",
+          "cilok, tepung terigu, ayam, daun bawang, kaldu bubuk",
+          "terigu, tapioka, bawang putih, garam, ketumbar",
+          "cilok, bawang putih, tepung tapioka, kaldu bubuk",
+          "tepung terigu, bawang putih, lada bubuk, ketumbar, gula"
+        ],
+        "gold_doc_ids": ["24969912"]
+      },
+      {
+        "category": "cilok",
+        "title": "Cilok kuah goang",
+        "query": [
+          "tepung terigu, tepung tapioka, bawang putih, daun bawang, cabai merah",
+          "cilok, tepung tapioka, bawang putih, saos sambal",
+          "tepung terigu, daun bawang, kaldu ayam, kencur",
+          "cilok, tepung terigu, cabai rawit, daun jeruk",
+          "tepung terigu, tepung tapioka, saos tiram, bawang putih"
+        ],
+        "gold_doc_ids": ["24977928"]
+      },
+      {
+        "category": "sop",
+        "title": "Sop Iga Berempah",
+        "query": [
+          "iga sapi, bawang putih, bawang merah, pala, kayu manis",
+          "sop iga, daun salam, lada bubuk, tomat, wortel",
+          "iga, bawang putih, jahe, garam, daun bawang",
+          "iga sapi, bawang putih, bawang bombay, cengkeh",
+          "sop iga, kayu manis, kapulaga, pala, seledri"
+        ],
+        "gold_doc_ids": ["24981482"]
+      },
+      {
+        "category": "sop",
+        "title": "Sop Iga Kayumanis",
+        "query": [
+          "iga, daging, wortel, kentang, kayu manis, cengkeh",
+          "daging sapi, kayu manis, bawang merah, bawang putih",
+          "iga sapi, tomat, daun bawang, bawang goreng",
+          "tulang iga, cengkeh, kapulaga, jahe, tomat",
+          "daging, wortel, kentang, kayu manis, sambal kecap"
+        ],
+        "gold_doc_ids": ["24060627"]
+      },
+      {
+        "category": "sop",
+        "title": "Sup Tulang Rempah ala Melayu",
+        "query": [
+          "tulang sapi, wortel, kentang, kayu manis, pala",
+          "tulang sapi, bawang putih, jahe, cengkeh",
+          "tulang, daun bawang, tomat, bawang goreng",
+          "sop tulang, kayu manis, lada, sambal kecap",
+          "tulang sapi, rempah, bawang, jahe"
+        ],
+        "gold_doc_ids": ["24983629"]
+      },
+      {
+        "category": "sop",
+        "title": "Sop Kambing Creamy",
+        "query": [
+          "kambing, susu evaporasi, kayu manis, pala, cengkeh",
+          "kambing, jahe, lengkuas, sereh, daun jeruk",
+          "daging kambing, susu, rempah, daun salam",
+          "sop kambing, pala, cengkeh, susu",
+          "kambing, jahe, lengkuas, susu evaporasi"
+        ],
+        "gold_doc_ids": ["24981758"]
+      },
+      {
+        "category": "sop",
+        "title": "Sup Ayam Jagung",
+        "query": [
+          "ayam fillet, telur, jagung, wortel, tahu putih",
+          "ayam, jagung pipil, saos tiram, minyak wijen",
+          "sup ayam, telur, minyak wijen, bawang putih",
+          "ayam, jagung, telur, daun bawang, saos tiram",
+          "ayam fillet, jagung, minyak wijen, penyedap"
+        ],
+        "gold_doc_ids": ["24982137"]
+      },
+      {
+        "category": "soto",
+        "title": "Soto Bandung",
+        "query": [
+          "daging sapi, lobak, sereh, daun jeruk, bawang putih",
+          "soto daging, jahe, pala, daun bawang, seledri",
+          "soto, daging sapi, lobak, garam, penyedap",
+          "soto bandung, bawang merah, merica, daun salam",
+          "daging, soto, daun bawang, jeruk purut"
+        ],
+        "gold_doc_ids": ["24982267"]
+      },
+      {
+        "category": "soto",
+        "title": "Soto Tangkar",
+        "query": [
+          "kikil, bawang putih, jahe, lengkuas, santan",
+          "soto, kikil, kecap manis, tomat, serai",
+          "kikil, kemiri, cengkeh, daun jeruk, kayu manis",
+          "soto tangkar, bawang merah, jahe, susu uht",
+          "kikil, kunyit, lengkuas, daun salam, soto"
+        ],
+        "gold_doc_ids": ["24980457"]
+      },
+      {
+        "category": "soto",
+        "title": "Sambal untuk Soto",
+        "query": [
+          "cabai keriting, cabai rawit, bawang putih, kemiri",
+          "sambal soto, cabai, bawang, garam",
+          "sambal, cabai, bawang putih, kemiri sangrai",
+          "cabai, bawang putih, garam, air",
+          "sambal untuk soto, cabai keriting, kemiri"
+        ],
+        "gold_doc_ids": ["24730112"]
+      },
+      {
+        "category": "soto",
+        "title": "Soto Segar Ala Soto Kwali",
+        "query": [
+          "ayam fillet, ceker ayam, sereh, daun salam, daun jeruk",
+          "soto ayam, cengkeh, kapulaga, bunga lawang, jahe",
+          "ayam, pala bubuk, ketumbar, laos, kaldu bubuk",
+          "dada ayam, soto kwali, seledri, sambal, jeruk nipis",
+          "ayam, bumbu putih, gula, garam, kaldu bubuk"
+        ],
+        "gold_doc_ids": ["24959742"]
+      },
+      {
+        "category": "soto",
+        "title": "Soto Lamongan Soto Kuah Kuning Tanpa Santan",
+        "query": [
+          "ayam fillet, bawang putih, ketumbar, kunyit, serai",
+          "soto lamongan, ayam, bawang merah, lengkuas, jahe",
+          "ayam, soto kuning, merica, kecap, bawang goreng",
+          "soto ayam, kunyit, ketumbar, gula pasir, garam",
+          "ayam, jahe, lengkuas, bawang putih, air"
+        ],
+        "gold_doc_ids": ["24978815"]
+      },
+      {
+        "category": "semur",
+        "title": "Semur Kikil Sapi",
+        "query": [
+          "kikil sapi, kecap manis, saus tiram, bawang putih, pala",
+          "kikil, kayu manis, jahe, cengkeh, kemiri",
+          "semur kikil, bawang merah, bawang putih, kecap",
+          "kikil sapi, garam, gula merah, bawang, pala",
+          "semur, kikil sapi, saus tiram, cengkeh"
+        ],
+        "gold_doc_ids": ["24930221"]
+      },
+      {
+        "category": "semur",
+        "title": "Semur Betawi",
+        "query": [
+          "paha ayam, telur, daun salam, kayu manis, cengkeh",
+          "semur ayam, telur, jahe, kunyit, kemiri",
+          "ayam, telur, daun jeruk, sereh, lengkuas",
+          "semur betawi, bawang merah, bawang putih, merica",
+          "paha ayam, telur ayam, kayu manis, cengkeh"
+        ],
+        "gold_doc_ids": ["24964196"]
+      },
+      {
+        "category": "semur",
+        "title": "Semur Ayam Praktis",
+        "query": [
+          "dada ayam, kecap manis, daun salam, daun jeruk, lengkuas",
+          "semur ayam, jahe, bawang putih bubuk, garam, gula",
+          "ayam, bumbu marinasi, minyak goreng, air, kecap",
+          "ayam, jahe, daun salam, daun jeruk, gula",
+          "semur ayam, kecap manis, jahe, lengkuas, bawang putih"
+        ],
+        "gold_doc_ids": ["24962771"]
+      },
+      {
+        "category": "semur",
+        "title": "Semur Tahu Telor",
+        "query": [
+          "tahu putih, telur ayam, kecap manis, saus tiram, lengkuas",
+          "semur tahu, daun salam, serai, gula merah, kemiri",
+          "tahu, telur, kecap, ketumbar, merica, kaldu bubuk",
+          "semur telur, tahu putih, bawang merah, bawang putih",
+          "tahu, telur, kecap manis, garam, bawang putih"
+        ],
+        "gold_doc_ids": ["24957856"]
+      },
+      {
+        "category": "semur",
+        "title": "Semur Babi",
+        "query": [
+          "daging babi, kecap manis, jahe, lengkuas, tomat",
+          "semur babi, kentang, tahu goreng, bawang putih",
+          "babi, kemiri, bawang merah, pala, daun salam",
+          "semur, daging babi, kecap, lengkuas, tomat",
+          "babi, jahe, bawang putih, pala, kecap manis"
+        ],
+        "gold_doc_ids": ["24960208"]
+      },
+      {
+        "category": "sayur lodeh",
+        "title": "Lodeh Koro Ungu",
+        "query": [
+          "koro kulit merah, santan, daun salam, bawang merah, bawang putih",
+          "sayur lodeh, koro, cabe rawit, garam, kaldu bubuk",
+          "lodeh, koro ungu, kunyit bubuk, lada bubuk, santan",
+          "koro merah, santan, bawang putih, garam, daun salam",
+          "sayur santan, koro, bawang merah, bawang putih, cabe"
+        ],
+        "gold_doc_ids": ["24788856"]
+      },
+      {
+        "category": "sayur lodeh",
+        "title": "Lodeh Terong Jawa",
+        "query": [
+          "terong ungu, tempe, santan, bawang putih, bawang merah",
+          "sayur lodeh, terong, cabe keriting, daun salam, daun jeruk",
+          "lodeh terong, bumbu jadi, ketumbar bubuk, santan, serai",
+          "terong, tempe, kentang, cabe ijo, cabe merah",
+          "terong, santan, bawang putih, bawang merah, daun salam"
+        ],
+        "gold_doc_ids": ["24944349"]
+      },
+      {
+        "category": "sayur lodeh",
+        "title": "Sayur Lodeh Sunda",
+        "query": [
+          "labu siam, kacang panjang, tempe, terong, santan",
+          "sayur lodeh, jagung manis, daun melinjo, daun salam, lengkuas",
+          "lodeh sunda, bawang merah, bawang putih, kemiri, cabe rawit",
+          "sayur lodeh, tempe, jagung, santan, kaldu jamur",
+          "lodeh, labu siam, tempe, bawang putih, cabe merah"
+        ],
+        "gold_doc_ids": ["24855020"]
+      },
+      {
+        "category": "sayur lodeh",
+        "title": "Lodeh Santan Labu Kuning Bayam Kacang Panjang dan Jagung",
+        "query": [
+          "labu kuning, kacang panjang, jagung, bayam, santan",
+          "sayur lodeh, labu, kemiri, ketumbar, bawang merah",
+          "lodeh labu kuning, bawang putih, lengkuas, santan, kaldu jamur",
+          "sayur santan, labu, bayam, bawang goreng, gula putih",
+          "labu kuning, bayam, kacang panjang, santan kara, bawang putih"
+        ],
+        "gold_doc_ids": ["24948193"]
+      },
+      {
+        "category": "sayur lodeh",
+        "title": "Lodeh Kluwih",
+        "query": [
+          "kluwih, kacang panjang, daun bawang, santan, daun salam",
+          "sayur lodeh, kluwih, kemiri, cabai rawit, daun jeruk",
+          "lodeh kluwih, bawang merah, bawang putih, lengkuas, tempe busuk",
+          "kluwih, cabai merah, santan, daun salam, daun jeruk",
+          "sayur santan, kluwih, bawang merah, cabai, kemiri"
+        ],
+        "gold_doc_ids": ["24961384"]
+      },
+      {
+        "category": "opor",
+        "title": "Opor Ayam Kering Khas Jawa Tengah",
+        "query": [
+          "ayam, santan, bawang putih, bawang merah, daun salam",
+          "opor ayam, jahe, lengkuas, ketumbar, sereh",
+          "ayam, daun jeruk, gula merah, kaldu jamur, santan instan",
+          "opor, ayam, kunyit, jahe, bawang merah",
+          "ayam, bumbu opor, daun salam, santan, sereh"
+        ],
+        "gold_doc_ids": ["24783196"]
+      },
+      {
+        "category": "opor",
+        "title": "Opor Ayam",
+        "query": [
+          "ayam, santan, bawang merah, bawang putih, daun salam",
+          "kemiri, kunyit, jahe, lengkuas",
+          "ayam, tahu, telur rebus, santan, daun jeruk",
+          "ayam, serai, ketumbar, merica",
+          "ayam, gula, garam, bawang putih, kaldu ayam"
+        ],
+        "gold_doc_ids": ["24973660"]
+      },
+      {
+        "category": "opor",
+        "title": "Opor Ayam Panggang Jepara",
+        "query": [
+          "ayam, santan, bawang putih, bawang merah, ketumbar, kunyit",
+          "ayam, santan, serai, daun jeruk, lengkuas",
+          "ayam, bawang putih, kemiri, ketumbar, santan",
+          "ayam panggang, santan, gula merah, daun salam",
+          "ayam, jeruk nipis, bawang merah, santan, jahe"
+        ],
+        "gold_doc_ids": ["24957337"]
+      },
+      {
+        "category": "opor",
+        "title": "Opor Manuk Khas NTB",
+        "query": [
+          "ayam kampung, santan, bawang merah, bawang putih, ketumbar",
+          "ayam, santan, kemiri, jinten, kencur",
+          "ayam, santan, cabai merah, kayu manis, cengkeh",
+          "ayam kampung, santan, jahe, lengkuas, lada hitam",
+          "ayam, santan, gula merah, garam, kaldu bubuk"
+        ],
+        "gold_doc_ids": ["24956983"]
+      },
+      {
+        "category": "opor",
+        "title": "Opor Ayam Simple Tanpa Santan",
+        "query": [
+          "ayam, bawang merah, bawang putih, daun salam, fiber cream",
+          "ayam, bumbu opor, daun jeruk, sereh, garam",
+          "ayam, fiber cream, bawang putih, air hangat",
+          "ayam, bawang merah, bawang putih, garam, gula",
+          "ayam, bumbu desaku, daun salam, daun jeruk"
+        ],
+        "gold_doc_ids": ["24954611"]
+      },
+      {
+        "category": "sayur asem",
+        "title": "Sayur Asem Jawa Sumatra",
+        "query": [
+          "ikan serai, terong hijau, kacang panjang, daun salam, tomat",
+          "sayur asem, serai, lengkuas, daun jeruk, bawang putih",
+          "terong, kacang panjang, bawang merah, kunyit, jahe",
+          "sayur asem, cabe merah, tomat, daun salam",
+          "ikan, lengkuas, bawang merah, bawang putih, terasi"
+        ],
+        "gold_doc_ids": ["24955647"]
+      },
+      {
+        "category": "sayur asem",
+        "title": "Sayur Asem Jakarta",
+        "query": [
+          "jagung manis, labu siam, kacang panjang, melinjo, daun salam",
+          "sayur asem, nangka muda, kol, kacang tanah, asam jawa",
+          "labu siam, jagung, kacang panjang, daun melinjo, gula merah",
+          "sayur asem, cabe merah, terasi, bawang merah, kemiri",
+          "sayur asem jakarta, kol, sawi putih, kaldu jamur"
+        ],
+        "gold_doc_ids": ["24964423"]
+      },
+      {
+        "category": "sayur asem",
+        "title": "Sayur Asem Ndeso",
+        "query": [
+          "wortel, kol, labu siam, jagung manis, kacang tanah",
+          "sayur asem, daun melinjo, asam jawa, gula merah, daun salam",
+          "kacang panjang, jagung, kol, gula merah, lengkuas",
+          "sayur asem, bawang merah, bawang putih, cabai merah",
+          "sayur asem ndeso, labu siam, kacang panjang, daun bawang"
+        ],
+        "gold_doc_ids": ["17271676"]
+      },
+      {
+        "category": "sayur asem",
+        "title": "Sayur Asam Ikan Lele Kutai",
+        "query": [
+          "ikan lele, kubis, daun salam, serai, asam jawa, bawang merah, bawang putih",
+          "lele, belimbing wuluh, tomat merah, cabe rawit, kunyit bubuk",
+          "ikan lele, asam jawa, daun salam, gula, garam",
+          "lele, kubis, serai, bawang putih, bawang merah",
+          "ikan lele, asam jawa, tomat, cabe rawit, belimbing wuluh"
+        ],
+        "gold_doc_ids": ["24956283"]
+      },
+      {
+        "category": "masakan jawa",
+        "title": "Sayur Bobor Daun Adas khas Salatiga Masakan dari sayuran sehat anti kangker dll",
+        "query": [
+          "daun adas, tempe semangit, santan, bawang merah, bawang putih",
+          "daun adas, tempe, kemiri, ketumbar, cabe merah",
+          "sayur bobor, daun adas, ikan asap, santan, daun salam",
+          "tempe semangit, daun adas, bawang putih, ketumbar, santan",
+          "daun adas, kemiri, santan, bawang merah, lengkuas"
+        ],
+        "gold_doc_ids": ["24191898"]
+      },
+      {
+        "category": "masakan jawa",
+        "title": "Pindang Serani Masakan Khas Jepara",
+        "query": [
+          "ikan kakap, bawang merah, bawang putih, kunyit, tomat, blimbing wuluh",
+          "pindang, ikan cukil, cabai merah, daun salam, serai, daun jeruk",
+          "ikan, lengkuas, bawang putih, garam, gula, kaldu bubuk",
+          "ikan, tomat, cabe rawit, bawang merah, kunyit",
+          "ikan, blimbing wuluh, daun salam, bawang putih, cabai merah"
+        ],
+        "gold_doc_ids": ["22572358"]
+      },
+      {
+        "category": "masakan jawa",
+        "title": "Becek Ayam Becek Pepaya Muda tempe bosok Masakan Khas Tuban Jawa Timur",
+        "query": [
+          "ayam, pepaya muda, tempe bosok, bawang merah, bawang putih",
+          "ayam, pepaya muda, cabai, daun salam, lengkuas",
+          "becek ayam, pepaya muda, tempe, bawang merah, santan",
+          "ayam, pepaya, cabai rawit, kemiri, garam",
+          "ayam, tempe, pepaya muda, bumbu becek"
+        ],
+        "gold_doc_ids": ["17312545"]
+      },
+      {
+        "category": "masakan jawa",
+        "title": "TONGSENG Grubyukan Modifikasi Seru Masakan",
+        "query": [
+          "sate kambing, sate ayam, kol, tomat, cabai merah, kecap manis",
+          "tongseng, daging paru, cabai rawit, bawang merah, bawang putih",
+          "tongseng, kol, pala, merica, ketumbar",
+          "tongseng, tomat, kecap manis, cabai, bawang merah",
+          "sate ayam, tongseng, cabai merah, bawang putih, kecap"
+        ],
+        "gold_doc_ids": ["17278124"]
+      },
+      {
+        "category": "masakan jawa",
+        "title": "Sambal masakan Kuah Soto bakso sop opor dkk nya",
+        "query": [
+          "bawang putih, bawang merah, cabe rawit, cabe merah keriting, tomat",
+          "sambal, cabe merah, bawang putih, garam, gula",
+          "bawang merah, cabe rawit, tomat, gula, garam",
+          "cabe merah, cabe rawit, bawang putih, bawang merah",
+          "sambal, cabe merah, tomat, garam, air"
+        ],
+        "gold_doc_ids": ["17251249"]
+      },
+      {
+        "category": "masakan sunda",
+        "title": "Seblak Aci Karakter",
+        "query": [
+          "tepung terigu, tepung tapioka, garam, penyedap rasa, lada",
+          "seblak, tepung tapioka, terigu, penyedap rasa",
+          "seblak aci, tepung tapioka, tepung terigu, garam",
+          "aci, tepung tapioka, tepung terigu, lada",
+          "seblak, tepung tapioka, garam, penyedap rasa"
+        ],
+        "gold_doc_ids": ["24983427"]
+      },
+      {
+        "category": "masakan sunda",
+        "title": "Gepuk Daging Sapi Basah",
+        "query": [
+          "daging sapi, daun salam, sereh, gula merah, santan",
+          "daging sapi, bawang putih, bawang merah, lengkuas, kemiri",
+          "gepuk, daging sapi, ketumbar, asam jawa, santan",
+          "daging sapi, gula merah, bawang putih, kemiri, kaldu sapi",
+          "daging sapi, daun salam, santan, bawang putih, bawang merah"
+        ],
+        "gold_doc_ids": ["24965189"]
+      },
+      {
+        "category": "masakan sunda",
+        "title": "Bekal Nasi Liwet",
+        "query": [
+          "beras, teri medan, santan, bawang merah, bawang putih",
+          "nasi liwet, daun salam, serai, cabe merah besar, santan",
+          "beras, teri medan, santan, cabe bubuk, gula merah",
+          "beras, bawang merah, bawang putih, daun salam, serai",
+          "nasi liwet, santan, bawang merah, teri medan, cabe merah"
+        ],
+        "gold_doc_ids": ["24979989"]
+      },
+      {
+        "category": "masakan sunda",
+        "title": "Sate Maranggi Goreng",
+        "query": [
+          "daging sapi, bawang putih, bawang merah, ketumbar, kecap manis",
+          "sate maranggi, daging sapi, jahe, lengkuas, air asam jawa",
+          "daging sapi, bawang merah, bawang putih, lada bubuk, kecap manis",
+          "daging sapi, tomat, bawang merah, cabe rawit, kecap manis",
+          "sate maranggi, daging sapi, gula merah, jahe, bawang putih"
+        ],
+        "gold_doc_ids": ["24809470"]
+      },
+      {
+        "category": "masakan sunda",
+        "title": "Sate Maranggi Oseng",
+        "query": [
+          "daging sapi, bawang merah, bawang putih, ketumbar, kecap manis",
+          "sate maranggi, daging sapi, jahe, lengkuas, asam jawa",
+          "daging sapi, gula merah, kecap manis, penyedap, garam",
+          "sate maranggi, bawang merah, cabai rawit, tomat, jeruk limau",
+          "daging sapi, margarin, bawang putih, lengkuas, asam jawa"
+        ],
+        "gold_doc_ids": ["24902442"]
+      },
+      {
+        "category": "masakan padang",
+        "title": "Ayam Pop Kids Friendly ala masakan padang",
+        "query": [
+          "ayam, air kelapa, santan, daun jeruk, daun salam",
+          "ayam, serai, bawang putih, kemiri, jahe",
+          "ayam pop, santan, air kelapa, daun salam, bawang putih",
+          "paha ayam, daun jeruk, serai, kemiri, jahe",
+          "ayam, bumbu padang, santan, bawang putih, jahe"
+        ],
+        "gold_doc_ids": ["24968231"]
+      },
+      {
+        "category": "masakan padang",
+        "title": "Sambal Balado Ayam masakan Padang",
+        "query": [
+          "ayam, cabai keriting, cabai rawit, bawang merah, bawang putih",
+          "ayam, sambal balado, bawang putih, garam, minyak goreng",
+          "ayam, cabai, bawang merah, ketumbar, air rebusan",
+          "ayam, bawang merah, cabai rawit, kecap manis, minyak",
+          "balado ayam, cabai, bawang merah, bawang putih, garam"
+        ],
+        "gold_doc_ids": ["24954120"]
+      },
+      {
+        "category": "masakan padang",
+        "title": "Gulai Pisang Telur Masakan Jadul Yang Endul",
+        "query": [
+          "pisang tanduk, telur rebus, santan, cabai merah, ebi",
+          "gulai pisang, telur, santan, bumbu gulai, garam",
+          "pisang tanduk, telur, santan kara, cabai, ebi goreng",
+          "gulai pisang, santan, telur rebus, cabai merah, lada bubuk",
+          "pisang, telur, santan, kaldu ayam, gula merah"
+        ],
+        "gold_doc_ids": ["24760593"]
+      },
+      {
+        "category": "masakan padang",
+        "title": "Gulai Tunjang Masakan Minang",
+        "query": [
+          "tunjang, santan, cabe giling, bawang merah, bawang putih",
+          "gulai tunjang, rebung, santan, jahe, lengkuas",
+          "tunjang, santan, daun kunyit, daun jeruk, daun salam",
+          "tunjang, cabe giling, bawang putih, kunyit, sere",
+          "gulai minang, tunjang, santan, jahe, daun jeruk"
+        ],
+        "gold_doc_ids": ["24558051"]
+      },
+      {
+        "category": "masakan padang",
+        "title": "Ambu Ambu Kelapa Oseng Untuk Rendang Masakan Padang",
+        "query": [
+          "kelapa parut, rendang, masakan padang",
+          "kelapa parut, oseng, rendang",
+          "ambu ambu, kelapa parut, masakan padang",
+          "kelapa parut, santan, oseng, rendang",
+          "kelapa parut, rendang, bumbu padang"
+        ],
+        "gold_doc_ids": ["23961675"]
+      },
+      {
+        "category": "masakan bali",
+        "title": "Ikan Kembung Me Nyat Nyat masakan Bali",
+        "query": [
+          "ikan kembung, bumbu base genep, asam jawa, daun jeruk, daun salam",
+          "ikan kembung, bumbu bali, gula jawa, sereh, kencur",
+          "ikan, base genep, asam jawa, daun jeruk, gula jawa",
+          "ikan kembung, bumbu bali, serai, daun salam, kencur",
+          "ikan kembung, me nyat nyat, bumbu base genep, gula jawa"
+        ],
+        "gold_doc_ids": ["17266709"]
+      },
+      {
+        "category": "masakan bali",
+        "title": "Base Genep Autentik Bumbu Dasar Masakan Bali",
+        "query": [
+          "lengkuas, kencur, kunyit, jahe, bawang merah, bawang putih",
+          "base genep, bumbu dasar, masakan bali, kemiri, ketumbar",
+          "bumbu dasar bali, jinten, pala, lada hitam, serai, daun salam",
+          "bumbu dasar, lengkuas, kunyit, kencur, jahe, kemiri",
+          "bumbu base genep, masakan bali, lada hitam, daun jeruk, minyak kelapa"
+        ],
+        "gold_doc_ids": ["17257686"]
+      },
+      {
+        "category": "masakan bali",
+        "title": "Suir ayam sambal matah masakan Bali",
+        "query": [
+          "ayam, sambal matah, bawang merah, cabe merah, jeruk lemo",
+          "suir ayam, sambal matah, bawang merah, cabe kecil, minyak panas",
+          "ayam, sambal matah, bawang merah, cabe, terasi",
+          "ayam, sambal matah, jeruk lemo, garam, gula",
+          "ayam suwir, sambal matah, bawang merah, cabe merah, minyak panas"
+        ],
+        "gold_doc_ids": ["17065143"]
+      },
+      {
+        "category": "masakan bali",
+        "title": "Jukut Komak Kacang Kara Masakan Khas Buleleng",
+        "query": [
+          "komak, kacang kara, bawang merah, bawang putih, cabe merah",
+          "jukut komak, kacang kara, kunyit, terasi, daun salam",
+          "sayur komak, kacang kara, cabe merah, bawang putih, asam",
+          "komak, kacang kara, cabe merah kecil, bawang merah, bawang putih",
+          "jukut komak, kacang kara, masakan bali, kunyit, terasi"
+        ],
+        "gold_doc_ids": ["16984053"]
+      },
+      {
+        "category": "masakan bali",
+        "title": "Jukut gonde sayur gonde masakan khas Bali",
+        "query": [
+          "gonde, bawang merah, bawang putih, cabe merah, terasi",
+          "sayur gonde, bawang merah, bawang putih, cabe kecil, garam",
+          "jukut gonde, cabe merah, bawang merah, terasi, gula pasir",
+          "gonde, sambal bawang, bawang merah, bawang putih, cabe merah",
+          "jukut gonde, sayur gonde, bawang merah, cabe merah kecil, garam"
+        ],
+        "gold_doc_ids": ["16899918"]
+      },
+      {
+        "category": "masakan banjar",
+        "title": "Bistik Ayam masakan khas Banjar",
+        "query": [
+          "ayam, telur, wortel, kentang, bawang putih, kecap manis",
+          "bistik ayam, bawang merah, kemiri, jahe, kayu manis",
+          "ayam, kentang, wortel, gula merah, kaldu ayam, lada bubuk",
+          "bistik ayam, bawang putih, bawang merah, kemiri, kecap manis",
+          "ayam, bistik, kentang, wortel, bumbu sop, cengkeh"
+        ],
+        "gold_doc_ids": ["24080783"]
+      },
+      {
+        "category": "masakan banjar",
+        "title": "Bumbu Dasar Masak Tuha Masakan Banjar",
+        "query": [
+          "bawang merah, bawang putih, jahe, kencur, kunyit, laos, serai",
+          "bumbu dasar, masakan banjar, lombok kering, jinten, adas manis",
+          "bumbu dasar masak tuha, kelapa parut, terasi, gula merah, garam",
+          "bumbu dasar, bawang merah, jahe, kunyit, laos, serai",
+          "bumbu masak banjar, lombok kering, bawang putih, bumbu kari, jinten"
+        ],
+        "gold_doc_ids": ["16208413"]
+      },
+      {
+        "category": "masakan banjar",
+        "title": "Haliling kuah santan pedas masakan banjar",
+        "query": [
+          "haliling, bawang merah, bawang putih, jahe, kunyit, kencur, santan",
+          "haliling, kuah santan, sereh, daun jeruk, laos, masakan banjar",
+          "haliling, santan, bawang merah, kunyit, jahe",
+          "haliling, pedas, kuah santan, serai, daun jeruk",
+          "haliling, masakan banjar, bawang merah, bawang putih, kencur"
+        ],
+        "gold_doc_ids": ["16191432"]
+      },
+      {
+        "category": "masakan banjar",
+        "title": "Telur Ayam Masak Habang masakan khas kalsel",
+        "query": [
+          "telur, ayam, cabe merah, daun jeruk, daun salam, sereh",
+          "telur ayam, bumbu merah, saus tomat, gula pasir, kaldu bubuk",
+          "telur, ayam, cabe, daun jeruk, lengkuas, jahe",
+          "telur ayam, bumbu dasar merah, cabe bubuk, daun salam, garam",
+          "telur ayam, masak habang, cabe merah, bawang putih, jahe"
+        ],
+        "gold_doc_ids": ["15544704"]
+      },
+      {
+        "category": "masakan banjar",
+        "title": "Garih batanak masakan santan ikan asin khas banjar",
+        "query": [
+          "ikan asin jambal, telur bebek, bawang merah, santan, lengkuas",
+          "garih batanak, ikan asin, santan, bawang putih, cabai merah",
+          "ikan asin, telur, santan, bawang merah, tomat",
+          "ikan asin jambal, cabe merah, bawang putih, lengkuas, santan",
+          "garih batanak, ikan asin, santan, serai, cabe rawit"
+        ],
+        "gold_doc_ids": ["13578084"]
+      },
+      {
+        "category": "masakan manado",
+        "title": "Woku Ikan Kembung Masakan Rumah Rasa Manado",
+        "query": [
+          "ikan kembung, bawang merah, bawang putih, cabai merah, daun jeruk",
+          "ikan kembung, woku, kunyit, jahe, tomat, daun pandan",
+          "ikan kembung, woku manado, serai, daun jeruk, daun kunyit",
+          "ikan kembung, woku, cabai rawit, jahe, daun salam",
+          "ikan kembung, masakan manado, tomat, daun jeruk, cabai merah"
+        ],
+        "gold_doc_ids": ["24629651"]
+      },
+      {
+        "category": "masakan manado",
+        "title": "Ikan goreng Sous masakan Manado",
+        "query": [
+          "ikan, bawang merah, jahe, tomat, cabe rawit, kecap",
+          "ikan goreng, bawang merah, bawang putih, tomat, lemon",
+          "ikan goreng sous, cabe rawit, bawang merah, kecap, air",
+          "ikan goreng, masakan manado, bawang putih, tomat, cabe",
+          "ikan, goreng sous, cabe rawit, bawang merah, cuka"
+        ],
+        "gold_doc_ids": ["23903252"]
+      },
+      {
+        "category": "masakan manado",
+        "title": "Bebek Peking Bumbu RW Laos Masakan Manado",
+        "query": [
+          "bebek peking, daun jeruk, kemangi, daun bawang, laos",
+          "bebek peking, bumbu rw, bawang merah, serai, jahe",
+          "bebek peking, masakan manado, bawang putih, cabe merah, laos",
+          "bebek, daun jeruk, kemangi, laos, serai, bawang putih",
+          "bebek peking, laos, bawang merah, kemangi, cabe rawit"
+        ],
+        "gold_doc_ids": ["14768379"]
+      },
+      {
+        "category": "masakan manado",
+        "title": "Ayam Kecap masakan Manado",
+        "query": [
+          "ayam, kecap manis, bawang merah, bawang putih, jahe, cabe rawit, tomat",
+          "ayam, kecap manis, bawang putih, bawang merah, jahe",
+          "ayam, bawang merah, kecap manis, cabe rawit, tomat",
+          "ayam, kecap manis, lada, penyedap rasa",
+          "ayam, bawang putih, jahe, kecap manis, cabe rawit"
+        ],
+        "gold_doc_ids": ["14877684"]
+      },
+      {
+        "category": "masakan manado",
+        "title": "Ayam Woku Kemangi Masakan Manado",
+        "query": [
+          "ayam, daun jeruk, kemangi, daun bawang, sereh, jahe, kunyit, lengkuas",
+          "ayam, woku, kemangi, daun jeruk, bawang putih, bawang merah",
+          "ayam, woku kemangi, sereh, daun pandan, cabai merah, jahe",
+          "ayam fillet, daun kemangi, kunyit, jahe, lengkuas, daun jeruk",
+          "ayam, woku, kemangi, daun bawang, cabai merah, bawang putih"
+        ],
+        "gold_doc_ids": ["13679438"]
+      },
+      {
+        "category": "minuman es",
+        "title": "Es Kweni Selasih",
+        "query": [
+          "kweni, selasih, nata de coco, gula pasir, es batu",
+          "kweni, nutrisari, selasih, es batu",
+          "kweni, gula pasir, nata de coco, es batu",
+          "kweni, selasih, nutrisari sweet mango, air dingin",
+          "kweni, es batu, gula pasir, nata de coco"
+        ],
+        "gold_doc_ids": ["24983560"]
+      },
+      {
+        "category": "minuman es",
+        "title": "Es Kopi Susu Coklat",
+        "query": [
+          "kopi hitam, susu UHT, coklat bubuk, gula, es batu",
+          "kopi hitam, coklat bubuk, susu full cream, gula pasir",
+          "kopi, coklat, susu, es batu",
+          "kopi, coklat bubuk, susu cair, gula, es batu",
+          "kopi, susu, coklat bubuk, air panas, es batu"
+        ],
+        "gold_doc_ids": ["24983404"]
+      },
+      {
+        "category": "minuman es",
+        "title": "Es Kopi Susu Kayu manis",
+        "query": [
+          "kopi instan, susu plain, gula, kayu manis, es batu",
+          "kopi, susu ultra plain, gula, kayu manis",
+          "kopi, susu, gula, es batu, kayu manis",
+          "kopi instan, susu, kayu manis, es batu",
+          "kopi, kayu manis, susu plain, gula pasir"
+        ],
+        "gold_doc_ids": ["24980486"]
+      },
+      {
+        "category": "minuman es",
+        "title": "Puding Es Doger",
+        "query": [
+          "kuning telur, gula pasir, maizena, santan, kelapa muda, skm, agar, pasta es doger",
+          "puding, es doger, santan, kelapa muda, skm putih, agar",
+          "santan, kelapa muda, gula, agar, telur, maizena",
+          "puding, es doger, kelapa muda, skm, santan",
+          "puding, kelapa muda, es doger, agar, santan"
+        ],
+        "gold_doc_ids": ["24978351"]
+      },
+      {
+        "category": "minuman es",
+        "title": "Es Buah Merah Putih",
+        "query": [
+          "semangka, apel, susu evaporasi, gula pasir, es batu",
+          "semangka merah, apel merah, susu, gula pasir, es batu",
+          "semangka, apel, susu, garam, air mineral dingin",
+          "semangka merah, apel, es batu, gula pasir",
+          "semangka, apel, susu evaporasi, air dingin"
+        ],
+        "gold_doc_ids": ["24977965"]
+      },
+      {
+        "category": "minuman kopi",
+        "title": "Bandrek Kopi Susu",
+        "query": [
+          "air, jahe, gula aren, sereh, kapulaga, kayu manis, kopi, kental manis",
+          "kopi, jahe, gula aren, sereh, kayu manis, susu kental manis",
+          "bandrek, kopi, jahe, gula aren, susu, kayu manis",
+          "bandrek, kopi, susu, jahe, gula aren, kapulaga",
+          "bandrek kopi, jahe, gula aren, susu, kayu manis"
+        ],
+        "gold_doc_ids": ["24824241"]
+      },
+      {
+        "category": "minuman kopi",
+        "title": "Salted Condensed Milk Coffee",
+        "query": [
+          "espresso, susu cair, condensed milk, garam, es batu",
+          "kopi espresso, susu cair, susu kental manis, garam, es batu",
+          "espresso, susu, garam, es batu, condensed milk",
+          "kopi, susu, kental manis, garam, es batu",
+          "salted coffee, susu cair, condensed milk, garam"
+        ],
+        "gold_doc_ids": ["16985221"]
+      },
+      {
+        "category": "minuman kopi",
+        "title": "Hot Thai Milk Coffee",
+        "query": [
+          "teh daun, nescafe, susu evaporasi, skm putih, air panas",
+          "kopi, teh daun, susu evaporasi, skm putih",
+          "thai coffee, teh, susu, nescafe, skm putih",
+          "kopi susu, teh daun, nescafe, air panas",
+          "kopi, teh, susu evaporasi, gula, skm putih"
+        ],
+        "gold_doc_ids": ["24952745"]
+      },
+      {
+        "category": "minuman kopi",
+        "title": "Kopi Susu Ettawa",
+        "query": [
+          "susu kambing ettawa, kopi mokachinno, jahe merah, kayu manis, madu",
+          "kopi, susu kambing, jahe, kayu manis, madu murni",
+          "kopi susu, jahe merah, madu, kayu manis",
+          "kopi mokachinno, susu kambing, madu, jahe merah",
+          "kopi, susu kambing ettawa, madu, kayu manis"
+        ],
+        "gold_doc_ids": ["24956539"]
+      },
+      {
+        "category": "minuman kopi",
+        "title": "Wedang Jahe Kopi Susu",
+        "query": [
+          "jahe, kopi bubuk, kental manis, gula pasir, air",
+          "wedang jahe, kopi, susu kental manis, gula pasir",
+          "jahe, kopi, air, gula, kental manis",
+          "wedang, jahe, kopi bubuk, kental manis",
+          "kopi jahe, kental manis, gula pasir, air panas"
+        ],
+        "gold_doc_ids": ["24938341"]
+      },
+      {
+        "category": "minuman tradisional",
+        "title": "Wedang Bajigur",
+        "query": [
+          "kelapa parut, jahe, kayu manis, kapulaga, gula merah, kopi instan, daun pandan",
+          "wedang, kelapa parut, gula merah, jahe, kopi instan",
+          "bajigur, kelapa, gula merah, jahe, daun pandan",
+          "wedang, jahe, gula merah, kelapa, kopi nescafe",
+          "bajigur, kelapa parut, gula merah, jahe, kayu manis"
+        ],
+        "gold_doc_ids": ["24984573"]
+      },
+      {
+        "category": "minuman tradisional",
+        "title": "Bandrek Aceh",
+        "query": [
+          "jahe, serai, kapulaga, cengkeh, kayu manis, daun pandan, gula pasir",
+          "bandrek, jahe, kayu manis, cengkeh, daun pandan",
+          "bandrek aceh, jahe, kapulaga, kayu manis, teh celup",
+          "jahe, kayu manis, cengkeh, daun pandan, gula aren",
+          "bandrek, jahe, serai, gula aren, teh celup"
+        ],
+        "gold_doc_ids": ["24984187"]
+      },
+      {
+        "category": "minuman tradisional",
+        "title": "Wedang Uwuh",
+        "query": [
+          "kayu secang, cengkeh, kayu manis, serai, jahe, pala, gula merah",
+          "wedang uwuh, kayu secang, jahe, kayu manis, gula batu",
+          "uwuh, jahe, cengkeh, kayu manis, daun pandan",
+          "wedang, kayu secang, pala, jahe, gula merah",
+          "uwuh, jahe, cengkeh, kayu manis, gula pasir"
+        ],
+        "gold_doc_ids": ["24983615"]
+      },
+      {
+        "category": "minuman tradisional",
+        "title": "Jamu Beras Kencur",
+        "query": [
+          "beras putih, kencur, gula merah, jahe, daun pandan, kayu manis, garam",
+          "jamu, beras kencur, gula merah, jahe, air",
+          "beras, kencur, jahe, gula merah, daun pandan",
+          "beras kencur, kayu manis, gula merah, jahe",
+          "beras, kencur, garam, gula merah, air minum"
+        ],
+        "gold_doc_ids": ["24983016"]
+      },
+      {
+        "category": "minuman tradisional",
+        "title": "Wedang Jahe Kayu Manis",
+        "query": [
+          "jahe, kayu manis, kunyit, serai, jeruk nipis, madu",
+          "wedang jahe, kayu manis, kunyit, madu",
+          "wedang, jahe, kayu manis, serai, madu",
+          "jahe, kunyit, kayu manis, jeruk nipis, madu",
+          "wedang jahe, serai, kayu manis, madu"
+        ],
+        "gold_doc_ids": ["24982907"]
+      },
+      {
+        "category": "masakan barat",
+        "title": "Simple Garlic Bread",
+        "query": [
+          "roti tawar, mentega, bawang putih, peterseli, seledri",
+          "garlic bread, roti, mentega, bawang putih",
+          "roti, mentega, bawang putih, herba",
+          "roti, bawang putih, margarin, peterseli",
+          "garlic bread, mentega, bawang putih, seledri"
+        ],
+        "gold_doc_ids": ["24984661"]
+      },
+      {
+        "category": "masakan barat",
+        "title": "Waffle Ori",
+        "query": [
+          "terigu, susu uht, telur, gula pasir, margarin",
+          "waffle, telur, terigu, susu, margarin",
+          "terigu, telur, susu, gula, margarin",
+          "waffle ori, susu, telur, margarin, gula",
+          "terigu, telur, gula, susu, margarin"
+        ],
+        "gold_doc_ids": ["24979188"]
+      },
+      {
+        "category": "masakan barat",
+        "title": "Rouge et Blanc Mousse Pudding",
+        "query": [
+          "susu uht, whipping cream, gula pasir, gelatin, vanilla, strawberry, sponge cake",
+          "mousse pudding, susu, cream, gelatin, strawberry, vanilla",
+          "pudding, susu uht, whipping cream, strawberry, gelatin",
+          "rouge et blanc, cream, gula, gelatin, strawberry, sponge cake",
+          "mousse, vanilla, susu, gelatin, strawberry, cream"
+        ],
+        "gold_doc_ids": ["24977753"]
+      },
+      {
+        "category": "masakan barat",
+        "title": "Panna Cotta Strawberry",
+        "query": [
+          "heavy cream, susu uht, gula, garam, gelatin, vanilla, strawberry, air jeruk nipis, daun mint",
+          "panna cotta, cream, susu, strawberry, gelatin, vanilla",
+          "strawberry panna cotta, cream, gula, air jeruk, daun mint",
+          "dessert, cream, susu, gelatin, strawberry, vanilla",
+          "panna cotta, strawberry, cream, vanilla, lemon, gelatin"
+        ],
+        "gold_doc_ids": ["24978702"]
+      },
+      {
+        "category": "masakan barat",
+        "title": "Pizza Supreme",
+        "query": [
+          "tepung terigu, air hangat, ragi instan, gula, garam, minyak zaitun, saus bolognese, saus tomat, keju mozzarella, daging asap, paprika, bawang bombay, jamur, mayonaise",
+          "pizza, terigu, ragi, keju, saus bolognese, daging, paprika",
+          "pizza supreme, tepung, air, ragi, saus, keju, sayuran",
+          "pizza, mozzarella, saus, jamur, paprika, bawang, daging",
+          "pizza, terigu, saus, keju, daging, jamur, paprika, bawang"
+        ],
+        "gold_doc_ids": ["24977694"]
+      },
+      {
+        "category": "masakan jepang",
+        "title": "Ebi Furai",
+        "query": [
+          "udang, telur, terigu, maizena, minyak goreng, air jeruk lemon, garam, merica, bawang putih bubuk, breadcrumb",
+          "ebi furai, udang, telur, tepung, maizena, breadcrumb",
+          "udang goreng, telur, terigu, maizena, minyak, bumbu",
+          "ebi, udang, minyak, telur, tepung, kaldu, bawang putih",
+          "udang, ebi furai, tepung, maizena, telur, minyak"
+        ],
+        "gold_doc_ids": ["24983523"]
+      },
+      {
+        "category": "masakan jepang",
+        "title": "Tumis Pokcoy Saus Teriyaki",
+        "query": [
+          "pokcoy, bawang putih, saus teriyaki, kecap manis, air, garam, lada, penyedap rasa",
+          "tumis pokcoy, bawang putih, saus teriyaki, kecap",
+          "pokcoy, teriyaki, kecap manis, bawang, garam, lada",
+          "tumis sayur, pokcoy, bawang, saus, kecap",
+          "pokcoy, bawang putih, saus, kecap manis, air"
+        ],
+        "gold_doc_ids": ["24982188"]
+      },
+      {
+        "category": "masakan jepang",
+        "title": "Pancake Dorayaki",
+        "query": [
+          "gula pasir, telur, tepung terigu, madu, susu uht, fermipan, soda kue, vanili, minyak goreng",
+          "dorayaki, telur, tepung, gula, susu, madu, vanili",
+          "pancake, tepung, telur, susu, gula, minyak, vanili",
+          "dorayaki, telur, tepung, gula, cream, baking soda",
+          "pancake dorayaki, gula, telur, tepung, madu, susu, vanili"
+        ],
+        "gold_doc_ids": ["24981999"]
+      },
+      {
+        "category": "masakan jepang",
+        "title": "Kare Jepang Golden Curry",
+        "query": [
+          "dada ayam, wortel, kentang, bawang bombay, air, bumbu golden curry, penyedap rasa, margarin",
+          "kare jepang, ayam, wortel, kentang, bawang, curry, margarin",
+          "golden curry, ayam, sayuran, bawang, margarin, penyedap",
+          "japanese curry, ayam, wortel, kentang, bumbu, margarin",
+          "kare, golden curry, ayam, sayuran, margarin, bumbu"
+        ],
+        "gold_doc_ids": ["24980829"]
+      },
+      {
+        "category": "masakan jepang",
+        "title": "Ebi Furai ala Martin Praja Masterchef",
+        "query": [
+          "udang, bawang putih, merica, garam, tepung terigu, tepung panir, telur, kaldu ayam, minyak goreng",
+          "ebi furai, udang, telur, tepung, panir, minyak, kaldu",
+          "udang goreng, telur, tepung, panir, bumbu, minyak",
+          "ebi, udang, tepung, maizena, telur, bawang putih",
+          "ebi furai, udang, telur, tepung, minyak, bumbu"
+        ],
+        "gold_doc_ids": ["24953287"]
+      },
+      {
+        "category": "masakan korea",
+        "title": "Tteokbokki Tteoppokki Teobbokki Topokki Ala Aku",
+        "query": [
+          "kue beras, margarin, saus cabai, saus tomat, saus bolognese, air, bawang bombay, bawang putih, sosis, telur puyuh, garam, gula, kaldu jamur, wijen, daun bawang",
+          "tteokbokki, kue beras, saus, margarin, telur, bawang",
+          "topokki, beras, saus, telur, sosis, wijen, daun bawang",
+          "tteoppokki, kue, saus cabai, tomat, margarin, telur",
+          "tteokbokki ala aku, kue beras, saus bolognese, telur, bawang, wijen"
+        ],
+        "gold_doc_ids": ["24972316"]
+      },
+      {
+        "category": "masakan korea",
+        "title": "Kimchi Simpel Tanpa Rasa Getir",
+        "query": [
+          "bawang putih, bombay, jahe, tepung beras, air, gula, bubuk cabe, garam, sawi putih, wortel, bawang daun",
+          "kimchi, bawang, jahe, tepung beras, sawi, wortel",
+          "kimchi simpel, sawi, wortel, bawang, jahe, tepung beras",
+          "kimchi tanpa getir, sawi putih, wortel, bawang, tepung",
+          "kimchi, bawang putih, bombay, jahe, tepung beras, sayuran"
+        ],
+        "gold_doc_ids": ["24967741"]
+      },
+      {
+        "category": "masakan korea",
+        "title": "Kimbap Nasi Merah",
+        "query": [
+          "wortel, timun, sosis, nori, tikar kimbap, minyak wijen, kecap asin, telur dadar, minyak goreng",
+          "kimbap, nasi merah, sayuran, telur, minyak wijen, kecap",
+          "nasi merah kimbap, wortel, timun, telur, minyak wijen, nori",
+          "kimbap, telur dadar, minyak, kecap asin, nori, sayuran",
+          "kimbap nasi, sayuran, telur, minyak wijen, kecap, nori"
+        ],
+        "gold_doc_ids": ["24955532"]
+      },
+      {
+        "category": "masakan korea",
+        "title": "Bibimbap ekonomis saus gochujang",
+        "query": [
+          "telur, wortel, tauge, bayam, zuchini, tahu, minyak wijen, wijen, garam, gula, kaldu jamur, lada, nasi putih, saus gochujang, bawang putih, cuka, nori",
+          "bibimbap, telur, sayuran, saus gochujang, nasi, minyak wijen, wijen",
+          "bibimbap ekonomis, telur, wortel, tauge, tahu, bayam, saus, nori",
+          "bibimbap, saus gochujang, nasi, sayuran, minyak wijen, bawang putih",
+          "bibimbap ekonomis, telur, tauge, bayam, saus gochujang, wijen, kecap asin"
+        ],
+        "gold_doc_ids": ["24944762"]
+      },
+      {
+        "category": "masakan korea",
+        "title": "Bibimbap",
+        "query": [
+          "bayam, wortel, jagung, kecambah, wijen, minyak, nasi putih, bawang bombay, bawang putih, gochujang, minyak wijen, gochugaru",
+          "bibimbap, sayuran, nasi, bawang, gochujang, minyak wijen, wijen",
+          "bibimbap klasik, bayam, wortel, jagung, kecambah, bumbu, nasi",
+          "bibimbap, nasi, sayuran, bawang, saus gochujang, wijen",
+          "bibimbap, wortel, bayam, gochujang, bawang, minyak wijen, kecap"
+        ],
+        "gold_doc_ids": ["24944675"]
+      },
+      {
+        "category": "masakan tiongkok",
+        "title": "Masakan China Mapo Doufu dengan potongan ati ayam mengunakan bahan Indonesia",
+        "query": [
+          "tahu, ati ayam, bawang putih, jahe, saus sambel, kecap inggris, saus tiram, merica, bubuk cabai, daun bawang, air, royco, garam, minyak goreng",
+          "mapo doufu, tahu, ati ayam, bawang, saus, kecap, minyak",
+          "mapo doufu, ayam, tahu, bawang putih, jahe, saus tiram, kecap inggris",
+          "masakan china, tahu, ayam, bawang, saus sambel, merica, minyak",
+          "mapo doufu, tahu, ati ayam, bawang putih, bumbu, minyak, garam"
+        ],
+        "gold_doc_ids": ["23971145"]
+      },
+      {
+        "category": "masakan tiongkok",
+        "title": "Sop Tahu Sawi ala masakan cina",
+        "query": [
+          "sawi putih, daun bawang, tahu putih, telur, jahe, minyak wijen, ebi, garam, kaldu jamur, air",
+          "sop tahu, sawi, telur, bawang, jahe, minyak wijen, ebi, kaldu",
+          "sop cina, tahu, sawi, telur, jahe, bumbu, minyak wijen",
+          "sop sayur, tahu, sawi putih, telur, bawang, jahe, garam",
+          "sop cina, sawi, tahu, telur, minyak wijen, kaldu jamur"
+        ],
+        "gold_doc_ids": ["23919435"]
+      },
+      {
+        "category": "masakan tiongkok",
+        "title": "Cumi cumi tumis cabe hijau masakan hongkong",
+        "query": [
+          "cumi-cumi, cabe hijau, bawang merah, bawang putih, jahe, gula, penyedap rasa, merica bubuk, saus tiram",
+          "cumi, cabe, bawang, jahe, saus tiram, gula, penyedap",
+          "cumi cumi, tumis, cabe hijau, bawang putih, bawang merah, jahe",
+          "cumi, tumis cabe, bawang, saus tiram, merica",
+          "cumi-cumi, cabe hijau, bawang, jahe, bumbu, saus tiram"
+        ],
+        "gold_doc_ids": ["17219270"]
+      },
+      {
+        "category": "masakan tiongkok",
+        "title": "Nasi Tim Daging sapi mpasi diet masakan sehat bekalanak",
+        "query": [
+          "daging sapi giling, jamur, bawang bombay, daun bawang, bawang putih, daun salam, jahe, minyak wijen, kecap asin, kecap manis, saus tiram, lada, penyedap, larutan maizena, butter, telur rebus",
+          "nasi tim, daging sapi, jamur, bawang, daun, bawang putih, jahe, kecap, saus tiram",
+          "nasi tim sehat, daging, bawang, telur, minyak wijen, saus tiram",
+          "mpasi diet, daging sapi, jamur, bawang, telur, kecap asin, maizena",
+          "nasi tim, daging sapi, jamur, bawang, telur, saus, kecap, minyak wijen"
+        ],
+        "gold_doc_ids": ["17144127"]
+      },
+      {
+        "category": "masakan tiongkok",
+        "title": "MAN NGAU CIN MASAKAN HONGKONG",
+        "query": [
+          "ngau cin, sengkel sapi, jahe, bawang putih, kecap asin, kecap hitam, gula batu, air, gula pasir",
+          "sengkel sapi, man ngau cin, jahe, bawang, kecap, gula",
+          "man ngau cin, sapi, bawang putih, jahe, kecap asin, kecap hitam, gula",
+          "masakan hongkong, sengkel, jahe, bawang, kecap, gula",
+          "ngau cin, sapi, kecap, gula, bawang putih, jahe, air"
+        ],
+        "gold_doc_ids": ["16582380"]
+      },
+      {
+        "category": "masakan thailand",
+        "title": "Masakan Tom Yum Goong",
+        "query": [
+          "bawang merah, bawang putih, cabai kriting, terasi, serai, lengkuas, minyak, air, daun jeruk, daun ketumbar, udang, jamur, tahu, tomat, mie, wortel, sawi putih",
+          "tom yum goong, bawang, cabai, terasi, serai, lengkuas, sayuran, udang",
+          "masakan thailand, tom yum, bawang putih, cabai, udang, sayuran, jamur, tahu",
+          "soup thai, bawang, cabai, serai, lengkuas, udang, sayur",
+          "tom yum, udang, cabai, bawang, sayuran, serai, lengkuas, daun"
+        ],
+        "gold_doc_ids": ["17250763"]
+      },
+      {
+        "category": "masakan thailand",
+        "title": "Pad Gaprao masakan Thai ala Tiger Kitchen",
+        "query": [
+          "daging ayam giling, daun kemangi, cabe kriting merah, bawang bombay, saus tiram, kecap ikan, dark soy sauce, kecap asin, kaldu blok, gula pasir",
+          "pad gaprao, ayam cincang, kemangi, cabe, bawang, saus tiram, kecap, gula",
+          "masakan thai, ayam, daun kemangi, cabe, bawang bombay, kecap, saus",
+          "pad gaprao, ayam giling, bumbu, cabe, bawang, kecap, saus tiram",
+          "ayam cincang, pad gaprao, kemangi, saus, kecap, cabe, bawang"
+        ],
+        "gold_doc_ids": ["13795398"]
+      },
+      {
+        "category": "masakan thailand",
+        "title": "Ayam Cincang Masakan Thailand",
+        "query": [
+          "ayam cincang, bawang bombay, bawang putih, rawit merah, garam, lada hitam, kecap manis, kecap asin, daun kemangi, margarin, minyak wijen",
+          "ayam cincang, bawang, cabe, kecap, daun kemangi, minyak wijen, margarin",
+          "masakan thailand, ayam cincang, bawang putih, bawang bombay, kecap, cabe, kemangi",
+          "ayam cincang, bawang, kecap, cabe, kemangi, margarin, minyak wijen",
+          "ayam cincang, bawang putih, cabe, kecap asin, kecap manis, daun kemangi"
+        ],
+        "gold_doc_ids": ["9491662"]
+      },
+      {
+        "category": "masakan thailand",
+        "title": "Tom Yum ala ala kuah merah pr masakan merahputih",
+        "query": [
+          "fishball, cumi, udang, tahu seafood, pokcoy, daun bawang, bawang putih, bawang merah, cabe merah besar, cabe merah keriting, rawit merah, lengkuas, belimbing wuluh, tomat, jeruk nipis, minyak, air, gula, garam, penyedap",
+          "tom yum merah, seafood, sayuran, bawang, cabe, lengkuas, jeruk, minyak",
+          "masakan merahputih, tom yum, fishball, cumi, udang, tahu, sayuran, bumbu",
+          "soup tom yum, seafood, bawang, cabe, pokcoy, lengkuas, jeruk nipis, minyak",
+          "tom yum ala kuah merah, seafood, sayur, bawang, cabe, lengkuas, tomat, air"
+        ],
+        "gold_doc_ids": ["3182967"]
+      },
+      {
+        "category": "masakan thailand",
+        "title": "Tomyam sederhana Resep masakan ala anak kost",
+        "query": [
+          "bakso salmon, bakso tuna, cabe rawit, cabe merah, sereh, lada, ketumbar, jahe, bawang merah, bawang putih, gula, garam, minyak sayur",
+          "tomyam, bakso, cabe, bawang, jahe, sereh, bumbu",
+          "soup thailand, bakso, cabai, bawang putih, bawang merah, sereh, jahe",
+          "tom yam, bakso salmon, bakso tuna, cabai, bawang, minyak",
+          "masakan thailand, bakso, cabe, bawang, jahe, sereh, gula, garam"
+        ],
+        "gold_doc_ids": ["1036365"]
+      },
+      {
+        "category": "masakan timur tengah",
+        "title": "Sayur marak masakan Arab",
+        "query": [
+          "daging kambing, tulang kambing, kapulaga arab, kunyit, jahe, lada bubuk, ketumbar, cengkeh, pala, kemiri, jinten, kayu manis, bawang merah, bawang putih, seledri, tomat",
+          "sayur marak, daging kambing, bawang, rempah, tomat, seledri",
+          "masakan arab, daging kambing, bawang, rempah, tomat",
+          "sayur arab, daging kambing, kapulaga, cengkeh, bawang, tomat, seledri",
+          "sayur marak, daging, rempah, bawang, tomat, seledri"
+        ],
+        "gold_doc_ids": ["15327008"]
+      },
+      {
+        "category": "masakan timur tengah",
+        "title": "Gawarma daging masakan daging simple tapi enak masakan arab",
+        "query": [
+          "daging, bawang putih, jintan, lada, air, mentega, garam",
+          "gawarma, daging, bawang, rempah, mentega, garam",
+          "masakan arab, daging, bawang putih, jintan, lada, air, mentega",
+          "daging arab, bawang, rempah, garam, mentega",
+          "gawarma, daging, bawang, jintan, garam, air, mentega"
+        ],
+        "gold_doc_ids": ["13377907"]
+      },
+      {
+        "category": "masakan timur tengah",
+        "title": "Biber Dolmas Paprika isi nasi Masakan Turki",
+        "query": [
+          "paprika, beras, bawang bombai, bawang putih, tomat, pasta tomat, garam, merica, daun mint, minyak goreng",
+          "dolmas, paprika, nasi, bawang, tomat, bumbu",
+          "masakan turki, paprika, beras, bawang, tomat, rempah",
+          "paprika isi nasi, bawang, tomat, minyak, garam, merica, mint",
+          "biber dolmas, paprika, nasi, bawang, tomat, bumbu"
+        ],
+        "gold_doc_ids": ["13345262"]
+      },
+      {
+        "category": "masakan timur tengah",
+        "title": "Nasi bulgur Domates soslu bulgur pilav Masakan Turki",
+        "query": [
+          "minyak goreng, beras bulgur, bawang bombai, cabai hijau, tomat, pasta tomat, garam, air panas",
+          "bulgur pilav, bulgur, bawang, cabai, tomat, pasta, garam",
+          "masakan turki, bulgur, bawang, cabai, tomat, bumbu",
+          "nasi bulgur, minyak, bawang, cabai, tomat, pasta tomat",
+          "bulgur pilav, beras bulgur, bawang, tomat, cabai, garam"
+        ],
+        "gold_doc_ids": ["13307439"]
+      },
+      {
+        "category": "masakan timur tengah",
+        "title": "Nasi Ayam Favorit F r nda Tavuk Kapama Masakan Turki",
+        "query": [
+          "beras, ayam rebus, daun timi, oregano, garam, merica bubuk, bawang bombai, cabai kering",
+          "nasi ayam, ayam, beras, bumbu, rempah",
+          "masakan turki, ayam, beras, oregano, garam, merica, bawang, cabai",
+          "tavuk kapama, ayam, beras, bawang, rempah",
+          "nasi ayam turki, ayam rebus, beras, bumbu, cabai"
+        ],
+        "gold_doc_ids": ["13298461"]
+      },
+      {
+        "category": "mpasi bulan",
+        "title": "Bubur Ayam Sawi Hijau Menu MPASI Start m",
+        "query": [
+          "nasi putih, ayam giling, tahu putih, sawi hijau, bawang putih, bawang merah, air, minyak ayam",
+          "bubur ayam, sawi hijau, tahu, bawang, air, minyak ayam",
+          "mpasi, bubur, ayam, sawi, bawang, tahu, minyak",
+          "bubur mpasi, ayam, sawi, tahu, bawang, air",
+          "bubur ayam mpasi, sawi, tahu, bawang, minyak ayam"
+        ],
+        "gold_doc_ids": ["24931017"]
+      },
+      {
+        "category": "mpasi bulan",
+        "title": "Sup Jagung Creamy Menu MPASI Start m",
+        "query": [
+          "jagung manis, daging ayam giling, wortel, buncis, susu UHT, bawang putih, bawang merah, keju bubuk, minyak ayam",
+          "sup jagung, ayam, wortel, buncis, susu, bawang, keju, minyak",
+          "mpasi, sup, jagung, ayam, sayur, bawang, keju",
+          "sup mpasi, jagung, ayam, wortel, buncis, bawang, susu",
+          "sup jagung creamy, ayam, sayur, bawang, keju, minyak ayam"
+        ],
+        "gold_doc_ids": ["24914376"]
+      },
+      {
+        "category": "mpasi bulan",
+        "title": "MPASI Bulan Cemilan Pure Pisang Sederhana",
+        "query": [
+          "pisang cavindesh",
+          "cemilan mpasi, pisang",
+          "mpasi, cemilan buah, pisang",
+          "pure pisang, mpasi",
+          "mpasi bulan, pisang, cemilan"
+        ],
+        "gold_doc_ids": ["24820401"]
+      },
+      {
+        "category": "mpasi bulan",
+        "title": "Cemilan Buah MPASI Bulan",
+        "query": [
+          "alpukat, asi, sufor",
+          "cemilan mpasi, alpukat, susu",
+          "mpasi, cemilan buah, alpukat",
+          "alpukat, mpasi bulan, cemilan",
+          "buah mpasi, alpukat, asi"
+        ],
+        "gold_doc_ids": ["24814887"]
+      },
+      {
+        "category": "mpasi bulan",
+        "title": "MPASI Bulan Pertama Prohe Telur Puyuh sekali makan",
+        "query": [
+          "telur puyuh, nasi, wortel, tahu, daun salam",
+          "mpasi, telur puyuh, sayur, nasi",
+          "mpasi bulan, telur puyuh, wortel, tahu",
+          "telur puyuh, mpasi, daun salam, nasi, sayur",
+          "prohe mpasi, telur puyuh, wortel, tahu"
+        ],
+        "gold_doc_ids": ["24812295"]
+      },
+      {
+        "category": "mpasi tahun",
+        "title": "Sempol Ayam MPASI th",
+        "query": [
+          "ayam paha fillet, kentang, bawang putih, bawang bombay, daun bawang, wortel, kaldu bubuk, garam, minyak wijen, VCO, stik kayu",
+          "mpasi, ayam, kentang, sayur, bawang, minyak wijen",
+          "sempol ayam, mpasi, kentang, wortel, bawang",
+          "ayam fillet, mpasi, sayur, minyak wijen, VCO",
+          "mpasi tahun, ayam, kentang, bawang, minyak wijen"
+        ],
+        "gold_doc_ids": ["24928733"]
+      },
+      {
+        "category": "mpasi tahun",
+        "title": "Kue Ultah Bolu Kukus Pisang Bayi tahun",
+        "query": [
+          "pancake mix, pisang matang, butter, telur ayam, susu uht, santan",
+          "kue ultah, bolu kukus, pisang, mpasi",
+          "mpasi, kue pisang, susu, telur, butter",
+          "bolu kukus pisang, mpasi tahun, pancake mix",
+          "kue bayi, bolu kukus, pisang, telur, susu"
+        ],
+        "gold_doc_ids": ["24920388"]
+      },
+      {
+        "category": "mpasi tahun",
+        "title": "Mandu Pangsit Tahu Ayam Udang Mpasi tahun",
+        "query": [
+          "tepung terigu, air panas, bawang putih, tahu sutera, paha ayam, udang, wortel, garam, bubuk kaldu",
+          "mandu pangsit, mpasi, ayam, udang, tahu, tepung",
+          "mpasi, mandu, tahu, ayam, udang, bawang",
+          "pangsit mpasi, ayam, udang, tahu, tepung, wortel",
+          "mpasi tahun, mandu, ayam, udang, tepung"
+        ],
+        "gold_doc_ids": ["24901696"]
+      },
+      {
+        "category": "mpasi tahun",
+        "title": "Perkedel kentang daging kids menu MPASI friendly",
+        "query": [
+          "kentang, bawang merah, bawang putih, daun bawang, telur, daging sapi cincang, garam, kaldu sapi, minyak goreng",
+          "perkedel kentang, mpasi, daging, bawang, telur",
+          "mpasi, perkedel, kentang, daging sapi, bawang",
+          "kentang mpasi, daging, bawang, telur, minyak",
+          "perkedel mpasi, kentang, daging, bawang, garam"
+        ],
+        "gold_doc_ids": ["24887340"]
+      },
+      {
+        "category": "mpasi tahun",
+        "title": "Camilan Mpasi Makaroni Schotel",
+        "query": [
+          "makaroni kering, air, garam, tepung terigu, margarin, susu uht, pala, lada bubuk, keju cheddar, seledri, telur, daging giling, bombay, bawang putih, minyak",
+          "mpasi, makaroni schotel, ayam, daging, telur, keju",
+          "camilan mpasi, makaroni, susu, telur, daging, seledri",
+          "makaroni schotel, mpasi tahun, telur, daging, keju, bawang",
+          "mpasi tahun, camilan, makaroni, daging, telur, keju"
+        ],
+        "gold_doc_ids": ["24885860"]
+      },
+      {
+        "category": "bekal anak",
+        "title": "Bekal Anak Sekolah Kerja 1",
+        "query": [
+          "nasi putih, bawang goreng, tumis ayam, kentang, tahu, tempe, teh",
+          "bekal anak, nasi, ayam, kentang, tahu, tempe",
+          "anak sekolah, bekal, tumis ayam, sayur, nasi",
+          "nasi putih, ayam, kentang, tahu, tempe, bawang goreng",
+          "bekal, anak, nasi, tumis ayam, sayur"
+        ],
+        "gold_doc_ids": ["24962156"]
+      },
+      {
+        "category": "bekal anak",
+        "title": "Bekal Anak Sekolah Kerja 2",
+        "query": [
+          "nasi putih, egg chicken roll, mie goreng, bawang goreng, teh",
+          "bekal anak, nasi, egg chicken roll, mie",
+          "anak sekolah, bekal, egg chicken roll, nasi, teh",
+          "nasi putih, ayam gulung telur, mie goreng, bawang goreng",
+          "bekal, anak, nasi, egg chicken roll, teh"
+        ],
+        "gold_doc_ids": ["24962166"]
+      },
+      {
+        "category": "bekal anak",
+        "title": "Bekal Anak Sekolah Kerja 3",
+        "query": [
+          "nasi putih, oseng daging mercon, kerupuk bawang, sari buah",
+          "bekal anak, nasi, daging pedas, kerupuk",
+          "anak sekolah, bekal, oseng daging, nasi",
+          "nasi putih, oseng daging mercon, kerupuk, minuman",
+          "bekal, anak, nasi, daging pedas, kerupuk"
+        ],
+        "gold_doc_ids": ["24962160"]
+      },
+      {
+        "category": "bekal anak",
+        "title": "Bekal Anak Sekolah Kerja 4",
+        "query": [
+          "nasi putih, oseng daging mercon, mie polosan, bawang goreng, teh",
+          "bekal anak, nasi, daging pedas, mie, bawang",
+          "anak sekolah, bekal, oseng daging mercon, mie",
+          "nasi putih, daging pedas, mie polosan, teh",
+          "bekal, anak, nasi, oseng daging, mie, teh"
+        ],
+        "gold_doc_ids": ["24962161"]
+      },
+      {
+        "category": "bekal anak",
+        "title": "Bekal Anak Sekolah 5",
+        "query": [
+          "roti tawar, glaze green tea, margarin, teh, lemper",
+          "bekal anak, roti, teh, lemper",
+          "anak sekolah, bekal, roti, margarin, teh",
+          "roti tawar, glaze, margarin, lemper, minuman",
+          "bekal, anak, roti, teh, lemper"
+        ],
+        "gold_doc_ids": ["24960896"]
+      },
+      {
+        "category": "nastar",
+        "title": "Nastar Premium Original dan Keju",
+        "query": [
+          "tepung terigu rendah protein, tepung maizena, butter, susu bubuk, gula halus, kuning telur, garam, cheddar, minyak, selai nanas",
+          "nastar, tepung, butter, telur, keju, selai nanas",
+          "kue nastar, tepung, gula, telur, keju, selai",
+          "nastar premium, butter, tepung, telur, keju, selai nanas",
+          "kue, nastar, tepung, telur, keju, selai"
+        ],
+        "gold_doc_ids": ["24967872"]
+      },
+      {
+        "category": "nastar",
+        "title": "Pasta coklat untuk isian pia nastar dll",
+        "query": [
+          "dcc, gula pasir, coklat bubuk, tepung terigu, margarin, susu",
+          "nastar, coklat, pasta, tepung, margarin, susu",
+          "isian pia, coklat, gula, tepung, margarin, susu",
+          "pasta coklat, nastar, kue, tepung, susu",
+          "nastar, coklat, pasta, kue, tepung, susu"
+        ],
+        "gold_doc_ids": ["24845510"]
+      },
+      {
+        "category": "nastar",
+        "title": "Oriental Pineapple Tart",
+        "query": [
+          "tepung terigu, butter, margarine, gula halus, tepung maizena, susu bubuk, kuning telur, vanilla, selai nanas",
+          "nastar, kue, tepung, butter, telur, selai nanas",
+          "pineapple tart, nastar, tepung, gula, butter, telur",
+          "kue nastar, butter, tepung, telur, selai",
+          "nastar oriental, tepung, butter, telur, selai nanas"
+        ],
+        "gold_doc_ids": ["24591231"]
+      },
+      {
+        "category": "nastar",
+        "title": "Nastar",
+        "query": [
+          "margarine, mentega, gula halus, tepung terigu, tepung maizena, kuning telur, susu bubuk, keju serbaguna, selai nanas",
+          "nastar, margarine, butter, gula, tepung, telur, keju, selai",
+          "kue nastar, tepung, butter, telur, selai, keju",
+          "nastar, kue, tepung, margarine, telur, selai, keju",
+          "kue, nastar, margarine, butter, gula, tepung, telur, keju, selai"
+        ],
+        "gold_doc_ids": ["24888784"]
+      },
+      {
+        "category": "nastar",
+        "title": "Nastar gulung alat sederhana",
+        "query": [
+          "selai nanas, kuning telur, gula halus, butter, susu bubuk, tepung terigu, tepung maizena, minyak, air, bubuk gold",
+          "nastar, selai nanas, tepung, butter, telur, susu bubuk, maizena",
+          "kue nastar, gulung, selai nanas, butter, tepung terigu, kuning telur",
+          "nastar gulung, selai nanas, telur, tepung, susu bubuk, butter",
+          "kue, nastar, selai, kuning telur, tepung, maizena, butter"
+        ],
+        "gold_doc_ids": ["24880332"]
+      },
+      {
+        "category": "kastengel",
+        "title": "KASTENGEL Gluten Free",
+        "query": [
+          "gula halus, butter, telur, tepung beras, tepung ketan, tepung maizena, keju cheddar, minyak goreng, kental manis",
+          "kastengel, gula, butter, telur, tepung, keju, minyak",
+          "kue kastengel, gluten free, telur, butter, keju, tepung",
+          "kastengel, gula halus, telur, tepung beras, keju, minyak",
+          "kue, kastengel, butter, telur, keju, tepung, minyak"
+        ],
+        "gold_doc_ids": ["24900658"]
+      },
+      {
+        "category": "kastengel",
+        "title": "Kastengel",
+        "query": [
+          "tepung pro rendah, maizena, gula halus, margarin, mentega, susu bubuk, kuning telur, keju cheddar, topping keju slice",
+          "kastengel, tepung, butter, telur, keju, topping",
+          "kue kastengel, tepung, margarin, telur, keju, gula",
+          "kastengel, tepung pro, gula, butter, keju, topping keju",
+          "kue, kastengel, tepung, margarin, keju, telur, topping"
+        ],
+        "gold_doc_ids": ["24798543"]
+      },
+      {
+        "category": "kastengel",
+        "title": "Kaastengels Ekonomis Tanpa Telur",
+        "query": [
+          "tepung protein rendah, maizena, susu bubuk, butter, margarin, keju cheddar, minyak goreng",
+          "kastengel ekonomis, tepung, butter, keju, margarin, maizena",
+          "kue kastengel, tanpa telur, tepung, keju, butter",
+          "kastengel, tepung protein rendah, butter, keju, minyak",
+          "kue, kastengel, tepung, keju, butter, maizena"
+        ],
+        "gold_doc_ids": ["24782828"]
+      },
+      {
+        "category": "kastengel",
+        "title": "Kastengel",
+        "query": [
+          "mentega, tepung terigu, kuning telur, susu bubuk, maizena, keju cheddar",
+          "kastengel, butter, tepung, telur, keju, susu bubuk, maizena",
+          "kue kastengel, mentega, tepung, telur, keju, maizena",
+          "kastengel, tepung, mentega, kuning telur, keju, maizena",
+          "kue, kastengel, butter, telur, tepung, keju, maizena"
+        ],
+        "gold_doc_ids": ["24782810"]
+      },
+      {
+        "category": "kastengel",
+        "title": "Kastengel Simple",
+        "query": [
+          "gula halus, butter, margarin, kuning telur, keju cheddar, garam, tepung pro rendah, maizena, susu bubuk, baking powder, olesan telur",
+          "kastengel simple, gula, butter, margarin, telur, keju, tepung, maizena",
+          "kue kastengel, simple, tepung, butter, telur, keju, maizena",
+          "kastengel, tepung pro, butter, margarin, telur, keju, baking powder",
+          "kue, kastengel, butter, telur, tepung, keju, maizena, olesan"
+        ],
+        "gold_doc_ids": ["24631459"]
+      },
+      {
+        "category": "kue kacang",
+        "title": "Kue kacang cokelat",
+        "query": [
+          "kacang tanah, gula pasir, coklat vanhouten, telur, susu, vanili",
+          "kue kacang, coklat, kacang tanah, telur, susu",
+          "kue, kacang coklat, telur, gula, susu, vanili",
+          "kue kacang, coklat, gula, telur, susu",
+          "kacang tanah, coklat, kue, gula, telur, susu"
+        ],
+        "gold_doc_ids": ["24907911"]
+      },
+      {
+        "category": "kue kacang",
+        "title": "Kue Kacang",
+        "query": [
+          "mentega, butter, kacang tanah, tepung terigu, kuning telur, gula halus, vanilla, susu cair",
+          "kue kacang, mentega, butter, kacang, telur, gula, tepung",
+          "kue, kacang, butter, mentega, gula, telur, tepung",
+          "kue kacang, mentega, tepung, gula, telur, susu, vanilla",
+          "kue, kacang, butter, mentega, tepung, telur, gula, vanilla"
+        ],
+        "gold_doc_ids": ["24881425"]
+      },
+      {
+        "category": "kue kacang",
+        "title": "Kue Kacang",
+        "query": [
+          "kacang, tepung terigu, gula halus, vanili, garam, minyak goreng, kuning telur",
+          "kue kacang, kacang, tepung, gula, kuning telur, minyak goreng",
+          "kue, kacang, tepung terigu, gula halus, vanili, minyak goreng, kuning telur",
+          "kue kacang, kacang tanah, tepung, gula, vanili, kuning telur",
+          "kue, kacang, tepung, gula, vanili, kuning telur, minyak goreng"
+        ],
+        "gold_doc_ids": ["24563092"]
+      },
+      {
+        "category": "kue kacang",
+        "title": "Kue Kacang Bimoli",
+        "query": [
+          "kacang tanah, gula halus, tepung terigu, minyak goreng, telur, pewarna kuning",
+          "kue kacang, kacang, tepung, gula, minyak, telur, pewarna",
+          "kue, kacang bimoli, kacang tanah, tepung terigu, gula, minyak, telur",
+          "kue kacang, kacang, tepung, minyak, gula, telur",
+          "kue, kacang, kacang tanah, tepung, gula, minyak, kuning telur"
+        ],
+        "gold_doc_ids": ["24793318"]
+      },
+      {
+        "category": "kue kacang",
+        "title": "Kue kacang",
+        "query": [
+          "kacang tanah, gula halus, mentega, tepung terigu, minyak goreng, vanili, garam, kuning telur",
+          "kue kacang, kacang, tepung, gula, mentega, minyak, kuning telur",
+          "kue, kacang, kacang tanah, tepung, gula, mentega, minyak, kuning telur",
+          "kue kacang, tepung, kacang, gula, mentega, kuning telur",
+          "kue, kacang, tepung, mentega, gula, kuning telur, minyak"
+        ],
+        "gold_doc_ids": ["24777411"]
+      },
+      {
+        "category": "putri salju",
+        "title": "Putri salju",
+        "query": [
+          "margarin, gula halus, tepung terigu, keju parut, maizena, susu bubuk, icing sugar, kuning telur",
+          "putri salju, margarin, gula, tepung, keju, maizena, kuning telur",
+          "kue putri salju, margarin, gula halus, tepung terigu, keju, maizena, kuning telur",
+          "putri salju, tepung, margarin, gula, keju, maizena, susu bubuk, telur",
+          "kue, putri salju, margarin, tepung, gula, keju, kuning telur, icing sugar"
+        ],
+        "gold_doc_ids": ["24955608"]
+      },
+      {
+        "category": "putri salju",
+        "title": "Putri Salju Red Velvet No Oven No Mixer",
+        "query": [
+          "margarin, pasta red velvet, gula halus, tepung terigu, maizena, susu Dancow, gula untuk topping",
+          "putri salju, margarin, pasta red velvet, tepung, gula, maizena, susu",
+          "kue putri salju, red velvet, margarin, gula, tepung, maizena, susu",
+          "putri salju, tepung, margarin, red velvet, gula, maizena, topping",
+          "kue, putri salju, margarin, pasta red velvet, tepung, gula, topping"
+        ],
+        "gold_doc_ids": ["22564280"]
+      },
+      {
+        "category": "putri salju",
+        "title": "Putri Salju Lumer",
+        "query": [
+          "buttermix, keju cheddar, mete, gula halus, almond meal, vanilla, garam, kuning telur, tepung terigu, maizena, susu bubuk, gula donat",
+          "putri salju, buttermix, keju, mete, gula, tepung, maizena, telur, almond, susu bubuk",
+          "kue putri salju, lumer, butter, keju, mete, gula, tepung, maizena, kuning telur",
+          "putri salju, tepung, butter, gula, keju, maizena, mete, kuning telur",
+          "kue, putri salju, butter, tepung, gula, keju, kuning telur, maizena, almond, susu bubuk"
+        ],
+        "gold_doc_ids": ["24874232"]
+      },
+      {
+        "category": "putri salju",
+        "title": "Putri Salju",
+        "query": [
+          "kuning telur, gula halus, gula pasir, mentega, tepung terigu, maizena, vanili, susu bubuk",
+          "putri salju, telur, gula, mentega, tepung, maizena, vanili, susu bubuk",
+          "kue putri salju, kuning telur, mentega, tepung, gula, maizena, vanili, susu bubuk",
+          "putri salju, tepung, gula, mentega, telur, maizena, vanili, susu bubuk",
+          "kue, putri salju, kuning telur, tepung, gula, mentega, maizena, susu bubuk"
+        ],
+        "gold_doc_ids": ["24793892"]
+      },
+      {
+        "category": "putri salju",
+        "title": "Pistache Cheesy Snow Balls Putri Salju",
+        "query": [
+          "butter, gula halus, susu bubuk, tepung terigu, maizena, kuning telur, keju, tepung pistachio, susu bubuk, gula icing",
+          "putri salju, butter, gula, tepung, keju, maizena, kuning telur, pistachio",
+          "kue putri salju, pistache, butter, gula, tepung, keju, maizena, telur",
+          "putri salju, tepung, butter, gula, keju, maizena, kuning telur, pistachio",
+          "kue, putri salju, butter, gula, tepung, keju, maizena, pistachio, kuning telur"
+        ],
+        "gold_doc_ids": ["14309419"]
+      },
+      {
+        "category": "lidah kucing",
+        "title": "Lidah Kucing Lumer",
+        "query": [
+          "putih telur, garam, buttermix, gula bubuk, vanilla, tepung terigu, susu bubuk, maizena",
+          "lidah kucing, putih telur, tepung, gula, butter, vanilla, susu bubuk, maizena",
+          "kue lidah kucing, putih telur, tepung terigu, buttermix, gula bubuk, vanilla, susu bubuk, maizena",
+          "lidah kucing, tepung, putih telur, butter, gula, vanilla, susu bubuk, maizena",
+          "kue, lidah kucing, putih telur, tepung terigu, butter, gula bubuk, vanilla, susu bubuk"
+        ],
+        "gold_doc_ids": ["24876695"]
+      },
+      {
+        "category": "lidah kucing",
+        "title": "Lidah Kucing Keju",
+        "query": [
+          "putih telur, gula halus, pasta vanilla, margarine, tepung terigu, maizena, susu bubuk, garam, keju cheddar",
+          "lidah kucing, putih telur, gula, margarin, tepung, maizena, keju, susu bubuk",
+          "kue lidah kucing, putih telur, margarin, gula, vanilla, tepung, maizena, keju",
+          "lidah kucing, tepung, margarin, putih telur, gula, keju, maizena, susu bubuk",
+          "kue, lidah kucing, putih telur, tepung, margarin, gula, maizena, keju"
+        ],
+        "gold_doc_ids": ["24586215"]
+      },
+      {
+        "category": "lidah kucing",
+        "title": "Lidah Kucing Matcha Greentea",
+        "query": [
+          "butter, margarine, gula halus, putih telur, tepung terigu, bubuk matcha, perisa matcha, baking powder",
+          "lidah kucing, butter, margarin, gula, putih telur, tepung, matcha, baking powder",
+          "kue lidah kucing, butter, margarine, gula, putih telur, tepung, matcha, perisa",
+          "lidah kucing, tepung, butter, margarin, gula, putih telur, matcha, baking powder",
+          "kue, lidah kucing, butter, margarin, gula, putih telur, tepung, matcha"
+        ],
+        "gold_doc_ids": ["24754487"]
+      },
+      {
+        "category": "lidah kucing",
+        "title": "Cookies Lidah Kucing",
+        "query": [
+          "butter, margarin, gula halus, putih telur, tepung terigu, susu bubuk, maizena, topping almond atau keju",
+          "lidah kucing, butter, margarin, gula, putih telur, tepung, maizena, topping",
+          "kue lidah kucing, butter, margarin, gula halus, putih telur, tepung, susu bubuk, maizena, topping",
+          "lidah kucing, tepung, butter, margarin, gula, putih telur, maizena, susu bubuk, topping",
+          "kue, lidah kucing, butter, margarin, gula, tepung, putih telur, maizena, topping"
+        ],
+        "gold_doc_ids": ["24671146"]
+      },
+      {
+        "category": "lidah kucing",
+        "title": "Lidah Kucing Devina Hermawan",
+        "query": [
+          "mentega tawar, salted butter, gula halus, garam, perisa vanila, kuning telur, susu bubuk, tepung terigu, baking powder, keju cheddar, putih telur",
+          "lidah kucing, mentega, salted butter, gula, telur, tepung, keju, baking powder",
+          "kue lidah kucing, butter, gula, kuning telur, tepung, keju, baking powder, putih telur, vanila",
+          "lidah kucing, tepung, mentega, salted butter, gula, telur, keju, baking powder",
+          "kue, lidah kucing, mentega, gula, tepung, kuning telur, keju, baking powder, putih telur"
+        ],
+        "gold_doc_ids": ["24669917"]
+      },
+      {
+        "category": "sagu keju",
+        "title": "Sagu Keju",
+        "query": [
+          "margarin, kuning telur, maizena, tepung protein rendah, gula, susu bubuk, icing sugar, keju parut",
+          "sagu keju, margarin, kuning telur, tepung, maizena, gula, keju, icing sugar",
+          "kue sagu keju, margarin, kuning telur, maizena, tepung, gula, susu bubuk, keju, icing sugar",
+          "sagu keju, tepung, margarin, gula, kuning telur, maizena, keju, icing sugar",
+          "kue, sagu keju, margarin, tepung, kuning telur, maizena, gula, keju"
+        ],
+        "gold_doc_ids": ["24955613"]
+      },
+      {
+        "category": "sagu keju",
+        "title": "Sagu Keju",
+        "query": [
+          "tepung sagu, gula halus, margarin, mentega, kuning telur, santan, keju cheddar, daun pandan",
+          "sagu keju, tepung sagu, gula, margarin, mentega, telur, santan, keju, pandan",
+          "kue sagu keju, tepung sagu, margarin, mentega, kuning telur, santan, keju parut, pandan",
+          "sagu keju, tepung sagu, margarin, gula, telur, santan, keju, daun pandan",
+          "kue, sagu keju, tepung sagu, margarin, mentega, kuning telur, santan, keju"
+        ],
+        "gold_doc_ids": ["24969867"]
+      },
+      {
+        "category": "sagu keju",
+        "title": "Sagu Keju",
+        "query": [
+          "tepung tapioka, gula halus, butter, telur, vanilla essens, keju parut, santan kental",
+          "sagu keju, tepung tapioka, gula, butter, telur, vanilla, keju, santan",
+          "kue sagu keju, tepung tapioka, butter, gula, telur, vanilla, keju parut, santan kental",
+          "sagu keju, tepung, gula, butter, telur, vanilla, keju, santan",
+          "kue, sagu keju, tepung tapioka, gula, butter, telur, keju, santan"
+        ],
+        "gold_doc_ids": ["24900629"]
+      },
+      {
+        "category": "sagu keju",
+        "title": "Sagu Keju Coklat dengan Santan",
+        "query": [
+          "butter, gula halus, kuning telur, keju parut, santan instan, coklat bubuk, tepung sagu, topping keju",
+          "sagu keju coklat, butter, gula, kuning telur, keju, santan, coklat, tepung sagu, topping",
+          "kue sagu keju coklat, butter, gula halus, kuning telur, keju parut, santan, coklat bubuk, tepung sagu",
+          "sagu keju, tepung sagu, butter, gula, kuning telur, keju, santan, coklat, topping keju",
+          "kue, sagu keju coklat, butter, gula, tepung sagu, kuning telur, keju, santan, coklat"
+        ],
+        "gold_doc_ids": ["17312700"]
+      },
+      {
+        "category": "sagu keju",
+        "title": "Kue Sagu Keju",
+        "query": [
+          "keju parut, tepung terigu protein rendah, gula halus, kuning telur, creamer bubuk, santan, tepung tapioka, margarin, keju taburan",
+          "kue sagu keju, keju parut, tepung terigu, gula, kuning telur, creamer, santan, tepung tapioka, margarin, taburan keju",
+          "sagu keju, keju, tepung terigu, gula halus, telur, santan, tepung tapioka, margarin, keju taburan",
+          "kue sagu keju, keju parut, tepung protein rendah, gula, kuning telur, santan, tepung tapioka, margarin",
+          "kue, sagu keju, keju parut, tepung, gula, margarin, kuning telur, santan, taburan keju"
+        ],
+        "gold_doc_ids": ["24782822"]
+      }            
+
+                  
+]

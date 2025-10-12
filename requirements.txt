@@ -15,6 +15,7 @@ pinecone[grpc]
 langchain_openai
 langchain
 together
+chromadb
 # fastapi[standard]
 # requests
 # uvicorn[standard]
@@ -22,3 +23,4 @@ qdrant-client
 scikit-learn
 transformers
 pytorch
+elasticsearch

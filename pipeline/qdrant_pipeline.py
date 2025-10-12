@@ -4,6 +4,7 @@ from qdrant_client.models import Distance, VectorParams, SparseVectorParams, Poi
 from typing import List, Dict, Any
 from pipeline.qdrant_generateVector import GenerateDenseVector, GenerateSparseVectors
 
+
 class QdrantPipeline:
     def __init__(self, client_url: str = "http://localhost:6333", collection_name: str = "default", mode: str = "hybrid"):
         self.client = QdrantClient(url=client_url)
@@ -82,7 +83,8 @@ class QdrantPipeline:
         try:
             mode = self.mode.lower()
             if mode not in ["dense", "sparse", "hybrid"]:
-                raise ValueError(f"Invalid mode '{mode}'. Must be one of: dense, sparse, hybrid")
+                raise ValueError(
+                    f"Invalid mode '{mode}'. Must be one of: dense, sparse, hybrid")
 
             dense_generator = None
             sparse_generator = None
@@ -91,14 +93,16 @@ class QdrantPipeline:
             if mode in ["dense", "hybrid"]:
                 dense_generator = GenerateDenseVector()
             if mode in ["sparse", "hybrid"]:
-                sparse_generator = GenerateSparseVectors(model_type="opensearch")
+                sparse_generator = GenerateSparseVectors(
+                    model_type="opensearch")
 
             # --- Baca CSV ---
             with open(path_files, "r", encoding="utf-8") as f:
                 reader = csv.DictReader(f)
                 data = list(reader)
 
-            print(f"Processing {len(data)} rows from {path_files} in mode '{mode}'")
+            print(
+                f"Processing {len(data)} rows from {path_files} in mode '{mode}'")
 
             for item in data:
                 text_value = item.get(column, "").strip()
@@ -118,16 +122,18 @@ class QdrantPipeline:
 
                 # --- Dense Embedding ---
                 if mode in ["dense", "hybrid"]:
-                    dense_values = dense_generator.get_dense_embedding(text_value)
+                    dense_values = dense_generator.get_dense_embedding(
+                        text_value)
                     if dense_values:
                         dense_vectors.append({
                             "id": int(item["id"]),
                             "vector": dense_values,
                             "payload": payload
                         })
-                    
+
                     # text all
-                    dense_values_all = dense_generator.get_dense_embedding(text_all)
+                    dense_values_all = dense_generator.get_dense_embedding(
+                        text_all)
                     if dense_values_all:
                         dense_vectors_all.append({
                             "id": int(item["id"]),
@@ -136,7 +142,8 @@ class QdrantPipeline:
 
                 # --- Sparse Embedding ---
                 if mode in ["sparse", "hybrid"]:
-                    sparse_vals = sparse_generator.get_sparse_vector(text_value)[0]
+                    sparse_vals = sparse_generator.get_sparse_vector(text_value)[
+                        0]
                     if sparse_vals and sparse_vals.get("indices") and sparse_vals.get("values"):
                         sparse_vectors.append({
                             "id": int(item["id"]),
@@ -147,7 +154,8 @@ class QdrantPipeline:
                             "payload": payload
                         })
 
-            print(f"Generated: {len(dense_vectors)} dense | {len(sparse_vectors)} sparse vectors")
+            print(
+                f"Generated: {len(dense_vectors)} dense | {len(sparse_vectors)} sparse vectors")
             return dense_vectors, sparse_vectors, dense_vectors_all
 
         except FileNotFoundError:
@@ -169,11 +177,13 @@ class QdrantPipeline:
         - hybrid: keduanya
         """
         if not self.check_collection_existence():
-            raise RuntimeError("Collection does not exist. Please create it first.")
+            raise RuntimeError(
+                "Collection does not exist. Please create it first.")
 
         mode = self.mode.lower()
         if mode not in ["dense", "sparse", "hybrid"]:
-            raise ValueError(f"Invalid mode '{mode}'. Must be one of: dense, sparse, hybrid")
+            raise ValueError(
+                f"Invalid mode '{mode}'. Must be one of: dense, sparse, hybrid")
 
         points = []
 
@@ -219,7 +229,8 @@ class QdrantPipeline:
             return
 
         self.client.upsert(collection_name=self.collection_name, points=points)
-        print(f"Upserted {len(points)} points in '{self.collection_name}' using mode '{mode}'")
+        print(
+            f"Upserted {len(points)} points in '{self.collection_name}' using mode '{mode}'")
 
     def search_data(
         self,
@@ -227,12 +238,14 @@ class QdrantPipeline:
         top_k: int = 1
     ):
         if not self.check_collection_existence():
-            raise RuntimeError("Collection does not exist. Please create it first.")
+            raise RuntimeError(
+                "Collection does not exist. Please create it first.")
 
         mode = self.mode.lower()
         if mode not in ["dense", "sparse", "hybrid"]:
-            raise ValueError(f"Invalid mode '{mode}'. Must be one of: dense, sparse, hybrid")
-        
+            raise ValueError(
+                f"Invalid mode '{mode}'. Must be one of: dense, sparse, hybrid")
+
         dense_vectors, sparse_vectors = [], []
         dense_results, sparse_results = [], []
         if mode in ["dense", "hybrid"]:
@@ -260,7 +273,7 @@ class QdrantPipeline:
                         "cookpad-ingre-dense": dense,
                         "vector_all": dense_all
                     })
-                
+
         if mode in ["sparse", "hybrid"]:
             sparse_generator = GenerateSparseVectors(model_type="opensearch")
             sparse_vectors = sparse_generator.get_sparse_vector(query)[0]
@@ -268,9 +281,9 @@ class QdrantPipeline:
                 sparse_result = self.client.query_points(
                     collection_name=self.collection_name,
                     query=models.SparseVector(
-                        indices=sparse_vectors.get("indices"), 
+                        indices=sparse_vectors.get("indices"),
                         values=sparse_vectors.get("values")
-                        ),
+                    ),
                     using="cookpad-ingre-sparse",
                     limit=top_k,
                     with_vectors=True
@@ -290,6 +303,4 @@ class QdrantPipeline:
                         "vector_all": dense_all
                     })
 
-        
         return dense_results, sparse_results
-    
