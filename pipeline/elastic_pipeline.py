@@ -183,8 +183,8 @@ class ElasticPipeline:
                     },
                 }
 
-                resp_dense = self.client.search(
-                    index=self.collection_name, body=dense_query
+                resp_dense = self.es.search(
+                    index=self.index, body=dense_query
                 )
 
                 dense_results = [
@@ -196,6 +196,8 @@ class ElasticPipeline:
                         "image": hit["_source"].get("image"),
                         "ingredients": hit["_source"].get("ingredients"),
                         "steps": hit["_source"].get("steps"),
+                        "cookpad-ingre-dense": hit["_source"].get("dense_vector_ingre"),
+                        "vector_all": hit["_source"].get("dense_vector_all"),
                     }
                     for hit in resp_dense["hits"]["hits"]
                 ]
@@ -233,6 +235,8 @@ class ElasticPipeline:
                         "image": hit["_source"].get("image"),
                         "ingredients": hit["_source"].get("ingredients"),
                         "steps": hit["_source"].get("steps"),
+                        "cookpad-ingre-dense": hit["_source"].get("dense_vector_ingre"),
+                        "vector_all": hit["_source"].get("dense_vector_all"),
                     }
                     for hit in resp_sparse["hits"]["hits"]
                 ]
