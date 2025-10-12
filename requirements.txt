@@ -18,3 +18,7 @@ together
 # fastapi[standard]
 # requests
 # uvicorn[standard]
+qdrant-client
+scikit-learn
+transformers
+pytorch
