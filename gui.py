@@ -3,8 +3,10 @@ import gradio as gr
 from AlgorithmClass import AlgorithmClass
 from helper import MultimodalModel
 from rag import Datahandle
+from UserPreferences import UserPreferences
 algorithm = AlgorithmClass()
 data_handler = Datahandle()
+preferences_handler = UserPreferences()
 
 # ini ganti dengan rag beneran dan embedding custom # <-- disini bay
 
@@ -157,12 +159,22 @@ def text_replace(file):
     return model.generate(file)
 
 
-def generate_recipe(input_text):
+def generate_recipe(input_text, user_preferences):
     # bikin HTML dari text
     algorithm.reset()
-    embedding_input = data_handler.get_embeddings_input(input_text)
 
-    algorithm.mapping_input(input_text, embedding_input)
+    new_input = input_text
+    # Combine user preferences (optional)
+    if user_preferences:
+        possible_ingre = preferences_handler.get_possible_ingredients(input_text, user_preferences)
+        if possible_ingre:
+            new_input += f"\nBahan tambahan yang mungkin cocok: {', '.join(possible_ingre)}"
+
+    # concat input ingredient text and possible ingredient
+    embedding_input = data_handler.get_embeddings_input(new_input)
+    algorithm.mapping_input(new_input, embedding_input)
+
+    # 
     recipes = data_handler.get_recipes(input_text)
 
     embeddings_all, embedings_ingredients = data_handler.get_embeddings_recipe(
@@ -225,6 +237,7 @@ with gr.Blocks(js=javascript_code,
             uploader = gr.UploadButton("Upload a file", file_types=[
                                        "image"], file_count="single")
             preview = gr.Image(label="Uploaded Preview")
+            user_preference = gr.Textbox(label="Type your prefereces here (Optional)", interactive=True)
             ingredients = gr.Textbox(
                 label="Type your ingredients here...", interactive=True)
             generate_btn = gr.Button("Generate Recipe")
@@ -246,7 +259,7 @@ with gr.Blocks(js=javascript_code,
     # klik generate -> munculkan rating + next_btn
     generate_btn.click(
         generate_recipe,
-        inputs=[ingredients],
+        inputs=[ingredients, user_preference],
         outputs=[steps_html, rating, next_btn]
     )
 
