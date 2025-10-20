@@ -15,3 +15,4 @@ class Settings:
     NAMESPACE2: str = os.getenv("NAMESPACE2")
     EMBED_DIM: int = int(os.getenv("EMBED_DIM") or 1024)
     ES_LOCAL_API_KEY: str = os.getenv("ES_LOCAL_API_KEY")
+    INDEX_ELASTIC_NAME: str = os.getenv("INDEX_ELASTIC_NAME")

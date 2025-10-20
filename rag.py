@@ -3,30 +3,35 @@ from AlgorithmClass import AlgorithmClass
 from pipeline.elastic_generateVector import GenerateDenseVector, GenerateSparseVectors
 from pipeline.elastic_pipeline import ElasticPipeline
 from pipeline.rag_pipeline import RAG_pipeline
+from settings import Settings as env
+import asyncio
 
 
 class Datahandle:
     def __init__(self):
         # search Elastic
-        self.client = ElasticPipeline(index_name="test-bang", mode="sparse")
+        self.client = ElasticPipeline(
+            index_name=env.INDEX_ELASTIC_NAME, mode="sparse")
         self.sparse_generator = GenerateSparseVectors(model_type="opensearch")
         self.dense_generator = GenerateDenseVector()
 
-    def get_recipes(self, query: str):
+    async def get_recipes(self, query: str):
         # get top 50 recipe based on query from vector db
         ''' 
         Input: text input (str)
         Output: list of recipes (dict) '''
-        output_recipes = self.client.search_data(
-            query, top_k=10)[1]  # get sparse embedding
-        return output_recipes
+        loop = asyncio.get_event_loop()
+        result = await loop.run_in_executor(None, self.client.search_data, query, 10)
+        return result[1]
 
     # ini ganti sama embedding sesuai maneh pake model apa untuk embeddingnya
-    def get_dense_input(self, text_input: str):
+    async def get_dense_input(self, text_input: str):
         '''
         Input: text input (str)
         Output: embedding_input '''
-        return self.dense_generator.get_dense_embedding(text_input)
+        loop = asyncio.get_event_loop()
+        embedding = await loop.run_in_executor(None, self.dense_generator.get_dense_embedding, text_input)
+        return embedding
 
     # ini ganti sama embedding recipe dari maneh
     def get_embeddings_recipe(self, recipes):

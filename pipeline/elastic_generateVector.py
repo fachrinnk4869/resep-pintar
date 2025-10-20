@@ -7,6 +7,7 @@ from typing import List, Dict, Union
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from huggingface_hub import hf_hub_download
+from sentence_transformers import SentenceTransformer
 
 
 class GenerateSparseVectors:
@@ -119,74 +120,40 @@ class GenerateSparseVectors:
 
 
 class GenerateDenseVector:
-    def __init__(self):
+    def __init__(self, model_name: str = "intfloat/multilingual-e5-small", device: str = None):
         """
-        Inisialisasi konfigurasi untuk SiliconFlow Embedding API.
-        Pastikan .env berisi:
-        SILICONFLOW_URL_EMBEDDING=<url endpoint>
-        SILICONFLOW_API_KEY=<api key>
-        EMBED_DIM=1024
+        Generate dense embedding menggunakan model HuggingFace: intfloat/multilingual-e5-small
         """
-        load_dotenv()
+        self.model_name = model_name
+        self.device = device or (
+            "cuda" if torch.cuda.is_available() else "cpu")
 
-        self.api_url = os.getenv("SILICONFLOW_URL_EMBEDDING")
-        self.api_key = os.getenv("SILICONFLOW_API_KEY")
-        self.embed_dim = int(os.getenv("EMBED_DIM") or 1024)
+        print(f"🔹 Loading model: {self.model_name} on {self.device}")
+        self.model = SentenceTransformer('intfloat/multilingual-e5-small')
 
-        if not self.api_url:
-            raise RuntimeError(
-                "SILICONFLOW_URL_EMBEDDING is not set in environment")
-        if not self.api_key:
-            raise RuntimeError("SILICONFLOW_API_KEY is not set in environment")
-
-        self.headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-        }
-
-    def get_dense_embedding(self, text: str, dim_size: int = None) -> List[float]:
+    def get_dense_embedding(self, text: str) -> List[float]:
         """
-        Mengambil dense embedding dari 1 text string.
-        Return: list[float]
+        Menghasilkan dense embedding dari 1 teks
         """
-        dim = dim_size or self.embed_dim
-        payload = {
-            "model": "Qwen/Qwen3-Embedding-8B",
-            "input": text,
-            "encoding_format": "float",
-            "dimensions": dim,
-        }
+        # Model e5 butuh prefix 'query:' atau 'passage:' tergantung konteks (search/retrieval)
+        # Untuk umum, gunakan 'query: ' agar konsisten
+        text = text.strip()
+        if not text.startswith("query:") and not text.startswith("passage:"):
+            text = "query: " + text
 
-        try:
-            response = requests.post(
-                self.api_url, json=payload, headers=self.headers)
-            response.raise_for_status()
-            data = response.json()
+        embeddings = self.model.encode(text, normalize_embeddings=True)
+        return embeddings
 
-            # Validasi format respons
-            if "data" not in data or not data["data"]:
-                raise ValueError(
-                    "Response JSON tidak memiliki field 'data' atau kosong.")
-            if "embedding" not in data["data"][0]:
-                raise ValueError(
-                    "Field 'embedding' tidak ditemukan di 'data[0]'.")
-
-            return data["data"][0]["embedding"]
-
-        except requests.exceptions.RequestException as e:
-            print(f"[HTTP Error] {e}")
-        except ValueError as e:
-            print(f"[Data Error] {e}")
-        except Exception as e:
-            print(f"[Unexpected Error] {e}")
-
-        return []
-
-    def get_dense_embeddings(self, texts: Union[str, List[str]], dim_size: int = None) -> List[List[float]]:
+    def get_dense_embeddings(self, texts: Union[str, List[str]]) -> List[List[float]]:
         """
         Mendapatkan embedding untuk 1 atau banyak teks sekaligus.
         """
         if isinstance(texts, str):
             texts = [texts]
 
-        return [self.get_dense_embedding(t, dim_size) for t in texts]
+        embeddings = []
+        for text in texts:
+            emb = self.get_dense_embedding(text)
+            embeddings.append(emb)
+
+        return embeddings

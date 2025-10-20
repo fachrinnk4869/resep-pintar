@@ -5,6 +5,7 @@ from elasticsearch import Elasticsearch, helpers
 from settings import Settings as env
 import json
 from pipeline.elastic_generateVector import GenerateDenseVector, GenerateSparseVectors
+from tqdm import tqdm
 
 
 class ElasticPipeline:
@@ -12,8 +13,11 @@ class ElasticPipeline:
         self.es = Elasticsearch(client_url, api_key=env.ES_LOCAL_API_KEY)
         self.index = index_name
         self.mode = mode.lower()
-        self.sparse_generator = GenerateSparseVectors(model_type="opensearch")
-        self.dense_generator = GenerateDenseVector()
+        if self.mode in ["dense", "hybrid"]:
+            self.dense_generator = GenerateDenseVector()
+        if self.mode in ["sparse", "hybrid"]:
+            self.sparse_generator = GenerateSparseVectors(
+                model_type="opensearch")
 
     # --- Utility ---
     def check_index_existence(self) -> bool:
@@ -38,9 +42,9 @@ class ElasticPipeline:
 
             if self.mode in ["dense", "hybrid"]:
                 properties["dense_vector_ingre"] = {
-                    "type": "dense_vector", "dims": 1024, "similarity": "cosine"}
+                    "type": "dense_vector", "similarity": "cosine"}
                 properties["dense_vector_all"] = {
-                    "type": "dense_vector", "dims": 1024, "similarity": "cosine"}
+                    "type": "dense_vector", "similarity": "cosine"}
 
             if self.mode in ["sparse", "hybrid"]:
                 properties["sparse_vector_ingre"] = {"type": "sparse_vector"}
@@ -55,16 +59,9 @@ class ElasticPipeline:
 
     # --- Generate Embeddings ---
     def generate_embeddings_from_file(self, path_files: str, column: str = "text"):
-        dense_generator, sparse_generator = None, None
         dense_vectors, sparse_vectors, dense_vectors_all = [], [], []
 
         try:
-            if self.mode in ["dense", "hybrid"]:
-                dense_generator = GenerateDenseVector()
-            if self.mode in ["sparse", "hybrid"]:
-                sparse_generator = GenerateSparseVectors(
-                    model_type="opensearch")
-
             with open(path_files, "r", encoding="utf-8") as f:
                 reader = csv.DictReader(f)
                 data = list(reader)
@@ -72,7 +69,7 @@ class ElasticPipeline:
             print(
                 f"Processing {len(data)} rows from {path_files} in mode '{self.mode}'")
 
-            for item in data:
+            for item in tqdm(data, desc="Generating embeddings"):
                 text_value = item.get(column, "").strip()
                 text_all = item.get("all_text", "").strip()
                 if not text_value and not text_all:
@@ -90,18 +87,20 @@ class ElasticPipeline:
 
                 # Dense embeddings
                 if self.mode in ["dense", "hybrid"]:
-                    dense_vec = dense_generator.get_dense_embedding(text_value)
-                    dense_all = dense_generator.get_dense_embedding(text_all)
-                    if dense_vec:
+                    dense_vec = self.dense_generator.get_dense_embedding(
+                        text_value)
+                    dense_all = self.dense_generator.get_dense_embedding(
+                        text_all)
+                    if dense_vec is not None and len(dense_vec) > 0:
                         dense_vectors.append(
                             {"payload": payload, "dense_vector_ingre": dense_vec})
-                    if dense_all:
+                    if dense_all is not None and len(dense_all) > 0:
                         dense_vectors_all.append(
                             {"payload": payload, "dense_vector_all": dense_all})
 
                 # Sparse embeddings
                 if self.mode in ["sparse", "hybrid"]:
-                    sparse_vals = sparse_generator.get_sparse_vector(text_value)[
+                    sparse_vals = self.sparse_generator.get_sparse_vector(text_value)[
                         0]
                     if sparse_vals.get("indices") and sparse_vals.get("values"):
                         sparse_vectors.append({

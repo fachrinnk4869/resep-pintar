@@ -3,6 +3,7 @@ import json
 import time
 import gradio as gr
 from AlgorithmClass import AlgorithmClass
+import asyncio
 from helper import MultimodalModel
 from rag import Datahandle
 data_handler = Datahandle()
@@ -163,49 +164,51 @@ def text_replace(file):
 
 
 # --- Functions that receive per-user algorithm via State ---
-def generate_recipe(input_text, user_preferences, algorithm_state):
-    # bikin HTML dari text
+async def generate_recipe(input_text, user_preferences, algorithm_state):
+    loop = asyncio.get_event_loop()
     algorithm_state.reset()
 
     new_input = input_text
-    # Combine user preferences (optional)
     if user_preferences:
-        possible_ingre = preferences_handler.get_possible_ingredients(
-            input_text, user_preferences)
+        possible_ingre = await preferences_handler.get_possible_ingredients(input_text, user_preferences)
         if possible_ingre:
             new_input += f"\nBahan tambahan yang mungkin cocok: {', '.join(possible_ingre)}"
 
-    # concat input ingredient text and possible ingredient
-    dense_input = data_handler.get_dense_input(new_input)
-    algorithm_state.mapping_input(new_input, dense_input)
+    # Panggilan berat (misal embedding atau retriever)
+    dense_input = await data_handler.get_dense_input(new_input)
+    await loop.run_in_executor(None, algorithm_state.mapping_input, new_input, dense_input)
 
-    #
-    recipes = data_handler.get_recipes(input_text)
-    dense_all, dense_ingr = data_handler.get_embeddings_recipe(recipes)
-    algorithm_state.mapping_output(
-        recipes, dense_all, dense_ingr)  # to mapping output
-    algorithm_state.first_generate_recipe()
+    recipes = await data_handler.get_recipes(input_text)
+    dense_all, dense_ingr = await loop.run_in_executor(None, data_handler.get_embeddings_recipe, recipes)
+
+    await loop.run_in_executor(None, algorithm_state.mapping_output, recipes, dense_all, dense_ingr)
+    await loop.run_in_executor(None, algorithm_state.first_generate_recipe)
+
+    html = await loop.run_in_executor(None, render_steps, input_text, algorithm_state)
     return (
-        render_steps(input_text, algorithm_state),
+        html,
         gr.update(visible=True),
         gr.update(visible=True),
-        algorithm_state,   # return updated state!
+        algorithm_state,
     )
 
 
-def next_recommendation(input_text, rating, algorithm_state):
+async def next_recommendation(input_text, rating, algorithm_state):
+    loop = asyncio.get_event_loop()
+
     start_time = time.time()
-    dense_input = data_handler.get_dense_input(input_text)
+    dense_input = await data_handler.get_dense_input(input_text)
     end_time = time.time()
     print(f"Time to get dense input: {end_time - start_time} seconds")
-    algorithm_state.mapping_input(
-        input_text, dense_input)  # to user_pref attribute
-    recipes = data_handler.get_recipes(input_text)
-    dense_all, dense_ingr = data_handler.get_embeddings_recipe(recipes)
-    algorithm_state.mapping_output(
-        recipes, dense_all, dense_ingr)  # to mapping output
-    algorithm_state.rating_recipe(rating)
-    return render_steps(input_text, algorithm_state), algorithm_state
+
+    await loop.run_in_executor(None, algorithm_state.mapping_input, input_text, dense_input)
+    recipes = await data_handler.get_recipes(input_text)
+    dense_all, dense_ingr = await loop.run_in_executor(None, data_handler.get_embeddings_recipe, recipes)
+    await loop.run_in_executor(None, algorithm_state.mapping_output, recipes, dense_all, dense_ingr)
+    await loop.run_in_executor(None, algorithm_state.rating_recipe, rating)
+
+    html = await loop.run_in_executor(None, render_steps, input_text, algorithm_state)
+    return html, algorithm_state
 
 
 with gr.Blocks(js=javascript_code,

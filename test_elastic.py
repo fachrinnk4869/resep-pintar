@@ -1,5 +1,5 @@
 from pipeline.elastic_pipeline import ElasticPipeline
-
+from settings import Settings as env
 """
 curl -fsSL https://elastic.co/start-local | sh
 
@@ -9,7 +9,7 @@ COPY API key dari elastic search ke .env
 
 if __name__ == "__main__":
     # Inisialisasi ElasticSearch
-    elastic = ElasticPipeline(index_name="test-bang", mode="hybrid")
+    elastic = ElasticPipeline(index_name=env.INDEX_ELASTIC_NAME, mode="hybrid")
 
     # Buat collection (dense + sparse)
     elastic.create_new_index()
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     elastic.upsert_data(dense_vecs, sparse_vecs, dense_vecs_all)
 
     # search Elastic
-    elastic = ElasticPipeline(index_name="test-bang", mode="sparse")
+    elastic = ElasticPipeline(index_name=env.INDEX_ELASTIC_NAME, mode="sparse")
     query = "ayam goreng"
     dense_result, sparse_result = elastic.search_data(query)
     print("Sparse Result", sparse_result)

@@ -30,14 +30,9 @@ class AlgorithmClass:
             r.get('cookpad-ingre-dense', []) for r in recipes]
         return embeddings_all, embeding_ingredients
 
-    def generate_input_embedding(self, text_input: str):
-        """Generate embedding untuk input user (text query)."""
-        return get_dense_embeddings(text_input)
-
     def mapping_input(self, text_input: str, embedding_input: Optional[np.ndarray] = None):
         """Set user preference berdasarkan input text atau embedding yang sudah ada."""
-        self.user_pref = embedding_input or self.generate_input_embedding(
-            text_input)
+        self.user_pref = embedding_input
         return text_input, self.user_pref
 
     # ----------------------------------------
