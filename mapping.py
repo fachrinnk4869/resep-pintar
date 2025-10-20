@@ -3,7 +3,8 @@ from typing import List
 
 class MappingOutput:
 
-    def __init__(self, title: str, ingredients_vector: List, all_vector: List, image: str, ingredients: List, steps: List[dict], final_vector=None):
+    def __init__(self, id, title: str, ingredients_vector: List, all_vector: List, image: str, ingredients: List, steps: List[dict], final_vector=None):
+        self.id = id
         self.title = title
         self.image = image
         self.ingredients = ingredients

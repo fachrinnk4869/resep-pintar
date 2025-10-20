@@ -1,9 +1,9 @@
 import json
+import time
 import gradio as gr
 from AlgorithmClass import AlgorithmClass
 from helper import MultimodalModel
 from rag import Datahandle
-algorithm = AlgorithmClass()
 data_handler = Datahandle()
 
 # ini ganti dengan rag beneran dan embedding custom # <-- disini bay
@@ -74,12 +74,14 @@ javascript_code = """
 # Perhatikan tidak ada lagi tag <script> di sini.
 
 
-def render_steps(input_text=None):
+def render_steps(input_text=None, algorithm_state=None):
     if not input_text or input_text.strip() == "":
         return "<p>Please enter some text and press 'Generate' to see the recipe.</p>"
 
     # Simulasi hasil dari algoritma Anda
-    result = algorithm.get_recipe()
+    result = algorithm_state.get_recipe()
+    # print("Rendering result steps:", result['steps'])
+    # print("Rendering result steps:", type(result['steps']))
 
     # Ambil data
     cover_img = result.get("image")
@@ -110,6 +112,7 @@ def render_steps(input_text=None):
         # 1. Buat blok HTML khusus untuk gambar-gambar
         images_html = ""
         # Pastikan ada gambar sebelum melakukan loop
+        # print(step)
         if step['images']:
             # Loop melalui SETIAP URL gambar di dalam list step['images']
             for img_url in step['images']:
@@ -157,26 +160,41 @@ def text_replace(file):
     return model.generate(file)
 
 
-def generate_recipe(input_text):
-    # bikin HTML dari text
-    algorithm.reset()
-    embedding_input = data_handler.get_embeddings_input(input_text)
-
-    algorithm.mapping_input(input_text, embedding_input)
+# --- Functions that receive per-user algorithm via State ---
+def generate_recipe(input_text, algorithm_state):
+    algorithm_state.reset()
+    start_time = time.time()
+    dense_input = data_handler.get_dense_input(input_text)
+    end_time = time.time()
+    print(f"Time to get dense input: {end_time - start_time} seconds")
+    algorithm_state.mapping_input(
+        input_text, dense_input)  # to user_pref attribute
     recipes = data_handler.get_recipes(input_text)
+    dense_all, dense_ingr = data_handler.get_embeddings_recipe(recipes)
+    algorithm_state.mapping_output(
+        recipes, dense_all, dense_ingr)  # to mapping output
+    algorithm_state.first_generate_recipe()
+    return (
+        render_steps(input_text, algorithm_state),
+        gr.update(visible=True),
+        gr.update(visible=True),
+        algorithm_state,   # return updated state!
+    )
 
-    embeddings_all, embedings_ingredients = data_handler.get_embeddings_recipe(
-        recipes)
 
-    algorithm.mapping_output(
-        recipes, embeddings_all, embedings_ingredients)
-    algorithm.first_generate_recipe()
-    return render_steps(input_text), gr.update(visible=True), gr.update(visible=True)
-
-
-def next_recommendation(input_text, rating):
-    algorithm.rating_recipe(rating)
-    return render_steps(input_text)
+def next_recommendation(input_text, rating, algorithm_state):
+    start_time = time.time()
+    dense_input = data_handler.get_dense_input(input_text)
+    end_time = time.time()
+    print(f"Time to get dense input: {end_time - start_time} seconds")
+    algorithm_state.mapping_input(
+        input_text, dense_input)  # to user_pref attribute
+    recipes = data_handler.get_recipes(input_text)
+    dense_all, dense_ingr = data_handler.get_embeddings_recipe(recipes)
+    algorithm_state.mapping_output(
+        recipes, dense_all, dense_ingr)  # to mapping output
+    algorithm_state.rating_recipe(rating)
+    return render_steps(input_text, algorithm_state), algorithm_state
 
 
 with gr.Blocks(js=javascript_code,
@@ -244,17 +262,18 @@ with gr.Blocks(js=javascript_code,
     uploader.upload(upload_file, uploader, preview)
     uploader.upload(text_replace, uploader, ingredients)
     # klik generate -> munculkan rating + next_btn
+    algo_state = gr.State(AlgorithmClass())   # 👈 per-user state object
     generate_btn.click(
         generate_recipe,
-        inputs=[ingredients],
-        outputs=[steps_html, rating, next_btn]
+        inputs=[ingredients, algo_state],
+        outputs=[steps_html, rating, next_btn, algo_state]
     )
 
     # klik next recommendation
     next_btn.click(
         next_recommendation,
-        inputs=[ingredients, rating],
-        outputs=[steps_html]
+        inputs=[ingredients, rating, algo_state],
+        outputs=[steps_html, algo_state]
     )
 
 demo.launch(server_name="0.0.0.0", server_port=7860)

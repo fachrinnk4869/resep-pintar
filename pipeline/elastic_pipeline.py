@@ -1,8 +1,9 @@
+import ast
 import csv
 from typing import List, Dict, Any
 from elasticsearch import Elasticsearch, helpers
 from settings import Settings as env
-
+import json
 from pipeline.elastic_generateVector import GenerateDenseVector, GenerateSparseVectors
 
 
@@ -153,6 +154,97 @@ class ElasticPipeline:
             print(f"Error during bulk insert: {e}")
 
     # --- Search Query ---
+    def search_data_vec(self, vec, top_k: int = 3):
+        """
+        Melakukan pencarian ke Elasticsearch dan memisahkan hasilnya menjadi dua:
+        - dense_results: hasil dari dense vector (script_score)
+        - sparse_results: hasil dari sparse vector (native sparse query)
+        """
+        if not self.check_index_existence():
+            raise RuntimeError("Index does not exist. Please create it first.")
+
+        mode = self.mode.lower()
+        dense_results, sparse_results = [], []
+
+        # === Dense Search ===
+        if mode in ["dense", "hybrid"]:
+            dense_vec = vec
+
+            if dense_vec:
+                dense_query = {
+                    "size": top_k,
+                    "query": {
+                        "script_score": {
+                            "query": {"match_all": {}},
+                            "script": {
+                                "source": "cosineSimilarity(params.query_vector, 'dense_vector_ingre') + 1.0",
+                                "params": {"query_vector": dense_vec},
+                            },
+                        }
+                    },
+                }
+
+                resp_dense = self.es.search(
+                    index=self.index, body=dense_query
+                )
+
+                dense_results = [
+                    {
+                        "id": hit["_source"].get("id"),
+                        "score": hit["_score"],
+                        "title": hit["_source"].get("title"),
+                        "category": hit["_source"].get("category"),
+                        "image": hit["_source"].get("image"),
+                        "ingredients": hit["_source"].get("ingredients"),
+                        "steps": hit["_source"].get("steps"),
+                        "cookpad-ingre-dense": hit["_source"].get("dense_vector_ingre"),
+                        "vector_all": hit["_source"].get("dense_vector_all"),
+                    }
+                    for hit in resp_dense["hits"]["hits"]
+                ]
+
+        # === Sparse Search ===
+        if mode in ["sparse", "hybrid"]:
+            # sparse_vec = self.sparse_generator.get_sparse_vector(query)[0]
+            sparse_vec = vec
+
+            if sparse_vec and sparse_vec.get("indices") and sparse_vec.get("values"):
+                query_vector = {
+                    str(i): float(v)
+                    for i, v in zip(sparse_vec["indices"], sparse_vec["values"])
+                }
+
+                sparse_query = {
+                    "size": top_k,
+                    "query": {
+                        "sparse_vector": {
+                            "field": "sparse_vector_ingre",
+                            "query_vector": query_vector,
+                        }
+                    },
+                }
+
+                resp_sparse = self.es.search(
+                    index=self.index, body=sparse_query
+                )
+
+                sparse_results = [
+                    {
+                        "id": hit["_source"].get("id"),
+                        "score": hit["_score"],
+                        "title": hit["_source"].get("title"),
+                        "category": hit["_source"].get("category"),
+                        "image": hit["_source"].get("image"),
+                        "ingredients": hit["_source"].get("ingredients"),
+                        "steps": hit["_source"].get("steps"),
+                        "cookpad-ingre-dense": hit["_source"].get("dense_vector_ingre"),
+                        "vector_all": hit["_source"].get("dense_vector_all"),
+                    }
+                    for hit in resp_sparse["hits"]["hits"]
+                ]
+
+        return dense_results, sparse_results
+
     def search_data(self, query: str, top_k: int = 3):
         """
         Melakukan pencarian ke Elasticsearch dan memisahkan hasilnya menjadi dua:
@@ -195,7 +287,7 @@ class ElasticPipeline:
                         "category": hit["_source"].get("category"),
                         "image": hit["_source"].get("image"),
                         "ingredients": hit["_source"].get("ingredients"),
-                        "steps": hit["_source"].get("steps"),
+                        "steps": json.loads(hit["_source"].get("steps")),
                         "cookpad-ingre-dense": hit["_source"].get("dense_vector_ingre"),
                         "vector_all": hit["_source"].get("dense_vector_all"),
                     }
@@ -233,8 +325,8 @@ class ElasticPipeline:
                         "title": hit["_source"].get("title"),
                         "category": hit["_source"].get("category"),
                         "image": hit["_source"].get("image"),
-                        "ingredients": hit["_source"].get("ingredients"),
-                        "steps": hit["_source"].get("steps"),
+                        "ingredients": ast.literal_eval(hit["_source"].get("ingredients")),
+                        "steps": ast.literal_eval(hit["_source"].get("steps")),
                         "cookpad-ingre-dense": hit["_source"].get("dense_vector_ingre"),
                         "vector_all": hit["_source"].get("dense_vector_all"),
                     }
