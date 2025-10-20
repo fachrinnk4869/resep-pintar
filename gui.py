@@ -1,3 +1,4 @@
+from UserPreferences import UserPreferences
 import json
 import time
 import gradio as gr
@@ -5,6 +6,7 @@ from AlgorithmClass import AlgorithmClass
 from helper import MultimodalModel
 from rag import Datahandle
 data_handler = Datahandle()
+preferences_handler = UserPreferences()
 
 # ini ganti dengan rag beneran dan embedding custom # <-- disini bay
 
@@ -161,14 +163,23 @@ def text_replace(file):
 
 
 # --- Functions that receive per-user algorithm via State ---
-def generate_recipe(input_text, algorithm_state):
+def generate_recipe(input_text, user_preferences, algorithm_state):
+    # bikin HTML dari text
     algorithm_state.reset()
-    start_time = time.time()
-    dense_input = data_handler.get_dense_input(input_text)
-    end_time = time.time()
-    print(f"Time to get dense input: {end_time - start_time} seconds")
-    algorithm_state.mapping_input(
-        input_text, dense_input)  # to user_pref attribute
+
+    new_input = input_text
+    # Combine user preferences (optional)
+    if user_preferences:
+        possible_ingre = preferences_handler.get_possible_ingredients(
+            input_text, user_preferences)
+        if possible_ingre:
+            new_input += f"\nBahan tambahan yang mungkin cocok: {', '.join(possible_ingre)}"
+
+    # concat input ingredient text and possible ingredient
+    dense_input = data_handler.get_dense_input(new_input)
+    algorithm_state.mapping_input(new_input, dense_input)
+
+    #
     recipes = data_handler.get_recipes(input_text)
     dense_all, dense_ingr = data_handler.get_embeddings_recipe(recipes)
     algorithm_state.mapping_output(
@@ -243,6 +254,8 @@ with gr.Blocks(js=javascript_code,
             uploader = gr.UploadButton("Upload a file", file_types=[
                                        "image"], file_count="single")
             preview = gr.Image(label="Uploaded Preview")
+            user_preference = gr.Textbox(
+                label="Type your prefereces here (Optional)", interactive=True)
             ingredients = gr.Textbox(
                 label="Type your ingredients here...", interactive=True)
             generate_btn = gr.Button("Generate Recipe")
@@ -265,7 +278,7 @@ with gr.Blocks(js=javascript_code,
     algo_state = gr.State(AlgorithmClass())   # 👈 per-user state object
     generate_btn.click(
         generate_recipe,
-        inputs=[ingredients, algo_state],
+        inputs=[ingredients, user_preference, algo_state],
         outputs=[steps_html, rating, next_btn, algo_state]
     )
 
