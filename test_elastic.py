@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     # Generate embeddings
     dense_vecs, sparse_vecs, dense_vecs_all = elastic.generate_embeddings_from_file(
-        path_files="data/clean/new_cookpad.csv",
+        path_files="data/clean/cookpad_final.csv",
         column="text"
     )
 
