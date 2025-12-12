@@ -9,8 +9,13 @@ from tqdm import tqdm
 
 
 class ElasticPipeline:
-    def __init__(self, client_url: str = "http://localhost:9200", index_name: str = "default", mode: str = "hybrid"):
-        self.es = Elasticsearch(client_url, api_key=env.ES_LOCAL_API_KEY)
+    def __init__(self, client_url: str = env.ES_CLIENT_URL, index_name: str = "default", mode: str = "hybrid"):
+        print(client_url)
+        print(env.ES_LOCAL_API_KEY)
+        try:
+            self.es = Elasticsearch(client_url, api_key=env.ES_LOCAL_API_KEY)
+        except Exception as e:
+            raise RuntimeError(f"Failed to connect to Elasticsearch: {e}")
         self.index = index_name
         self.mode = mode.lower()
         if self.mode in ["dense", "hybrid"]:
@@ -31,7 +36,7 @@ class ElasticPipeline:
         try:
             # Konfigurasi mapping berdasarkan mode
             properties = {
-                "id": {"type": "integer"},
+                "id": {"type": "text"},
                 "category": {"type": "keyword"},
                 "url": {"type": "keyword"},
                 "title": {"type": "text"},
@@ -76,7 +81,7 @@ class ElasticPipeline:
                     continue
 
                 payload = {
-                    "id": int(item["id"]),
+                    "id": item["id"],
                     "category": item.get("category"),
                     "url": item.get("url"),
                     "title": item.get("title"),
@@ -234,8 +239,8 @@ class ElasticPipeline:
                         "title": hit["_source"].get("title"),
                         "category": hit["_source"].get("category"),
                         "image": hit["_source"].get("image"),
-                        "ingredients": hit["_source"].get("ingredients"),
-                        "steps": hit["_source"].get("steps"),
+                        "ingredients": ast.literal_eval(hit["_source"].get("ingredients")),
+                        "steps": ast.literal_eval(hit["_source"].get("steps")),
                         "cookpad-ingre-dense": hit["_source"].get("dense_vector_ingre"),
                         "vector_all": hit["_source"].get("dense_vector_all"),
                     }

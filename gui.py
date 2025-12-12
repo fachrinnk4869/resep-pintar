@@ -109,13 +109,14 @@ def render_steps(input_text=None, algorithm_state=None):
     """
 
     # Slide 3: Steps
+    # print("halo result:", result)
     steps_html_content = ""
     for idx, step in enumerate(result['steps'], start=1):
         # --- Bagian Baru ---
         # 1. Buat blok HTML khusus untuk gambar-gambar
         images_html = ""
         # Pastikan ada gambar sebelum melakukan loop
-        # print(step)
+        # print("halooo", step)
         if step['images']:
             # Loop melalui SETIAP URL gambar di dalam list step['images']
             for img_url in step['images']:
@@ -169,16 +170,18 @@ async def generate_recipe(input_text, user_preferences, algorithm_state):
     algorithm_state.reset()
 
     new_input = input_text
+    possible_ingre = []
     if user_preferences:
         possible_ingre = await preferences_handler.get_possible_ingredients(input_text, user_preferences)
+        print("User Preferences:", possible_ingre)
         if possible_ingre:
-            new_input += f"\nBahan tambahan yang mungkin cocok: {', '.join(possible_ingre)}"
+            new_input += f" {', '.join(possible_ingre)}"
 
     # Panggilan berat (misal embedding atau retriever)
     dense_input = await data_handler.get_dense_input(new_input)
     await loop.run_in_executor(None, algorithm_state.mapping_input, new_input, dense_input)
 
-    recipes = await data_handler.get_recipes(input_text)
+    recipes = await data_handler.get_recipes(input_text, possible_ingredient=", ".join(possible_ingre))
     dense_all, dense_ingr = await loop.run_in_executor(None, data_handler.get_embeddings_recipe, recipes)
 
     await loop.run_in_executor(None, algorithm_state.mapping_output, recipes, dense_all, dense_ingr)
@@ -189,21 +192,26 @@ async def generate_recipe(input_text, user_preferences, algorithm_state):
         html,
         gr.update(visible=True),
         gr.update(visible=True),
+        possible_ingre,
         algorithm_state,
     )
 
 
-async def next_recommendation(input_text, rating, algorithm_state):
+async def next_recommendation(input_text, user_preferences, possible_ingre, rating, algorithm_state):
     loop = asyncio.get_event_loop()
 
-    start_time = time.time()
-    dense_input = await data_handler.get_dense_input(input_text)
-    end_time = time.time()
-    print(f"Time to get dense input: {end_time - start_time} seconds")
+    new_input = input_text
+    if user_preferences:
+        if possible_ingre:
+            print("User Preferences:", possible_ingre)
+            new_input += f" {', '.join(possible_ingre)}"
 
-    await loop.run_in_executor(None, algorithm_state.mapping_input, input_text, dense_input)
-    recipes = await data_handler.get_recipes(input_text)
+    dense_input = await data_handler.get_dense_input(new_input)
+    await loop.run_in_executor(None, algorithm_state.mapping_input, new_input, dense_input)
+
+    recipes = await data_handler.get_recipes(input_text, possible_ingredient=", ".join(possible_ingre))
     dense_all, dense_ingr = await loop.run_in_executor(None, data_handler.get_embeddings_recipe, recipes)
+
     await loop.run_in_executor(None, algorithm_state.mapping_output, recipes, dense_all, dense_ingr)
     await loop.run_in_executor(None, algorithm_state.rating_recipe, rating)
 
@@ -259,6 +267,7 @@ with gr.Blocks(js=javascript_code,
             preview = gr.Image(label="Uploaded Preview")
             user_preference = gr.Textbox(
                 label="Type your prefereces here (Optional)", interactive=True)
+            possible_ingredients = gr.State([])
             ingredients = gr.Textbox(
                 label="Type your ingredients here...", interactive=True)
             generate_btn = gr.Button("Generate Recipe")
@@ -282,13 +291,15 @@ with gr.Blocks(js=javascript_code,
     generate_btn.click(
         generate_recipe,
         inputs=[ingredients, user_preference, algo_state],
-        outputs=[steps_html, rating, next_btn, algo_state]
+        outputs=[steps_html, rating, next_btn,
+                 possible_ingredients, algo_state]
     )
 
     # klik next recommendation
     next_btn.click(
         next_recommendation,
-        inputs=[ingredients, rating, algo_state],
+        inputs=[ingredients, user_preference,
+                possible_ingredients, rating, algo_state],
         outputs=[steps_html, algo_state]
     )
 
